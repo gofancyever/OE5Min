@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BCA7CAA01DF7A89B00CA5EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CA9F1DF7A89B00CA5EC6 /* AppDelegate.swift */; };
-		BCA7CAA21DF7A89B00CA5EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CAA11DF7A89B00CA5EC6 /* ViewController.swift */; };
-		BCA7CAA51DF7A89B00CA5EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA31DF7A89B00CA5EC6 /* Main.storyboard */; };
+		33068C034C4FB756E147628A /* Pods_OE5Min.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */; };
+		BC1C66D81DF9596C0054B610 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1C66D71DF9596C0054B610 /* Home.storyboard */; };
+		BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E631DF8FA39006FA33C /* AppDelegate.swift */; };
+		BC372E661DF8FA39006FA33C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC372E641DF8FA39006FA33C /* Info.plist */; };
+		BC372E6E1DF8FB48006FA33C /* OEHomeContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E6D1DF8FB48006FA33C /* OEHomeContoller.swift */; };
+		BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */; };
+		BC372E731DF906C6006FA33C /* OEHomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E711DF906C6006FA33C /* OEHomeCollectionCell.swift */; };
+		BC372E741DF906C6006FA33C /* OEHomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */; };
 		BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */; };
 		BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */; };
 		BCA7CAB51DF7A89B00CA5EC6 /* OE5MinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CAB41DF7A89B00CA5EC6 /* OE5MinTests.swift */; };
@@ -34,13 +39,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OE5Min.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4358352ACC8114258EBA7D /* Pods-OE5Min.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OE5Min.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min.debug.xcconfig"; sourceTree = "<group>"; };
+		A1FD8344CF9E9AABDCDAF6A9 /* Pods-OE5Min.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OE5Min.release.xcconfig"; path = "Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min.release.xcconfig"; sourceTree = "<group>"; };
+		BC0A8C8E1DF95F32008B348C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		BC1C66D71DF9596C0054B610 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		BC372E631DF8FA39006FA33C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC372E641DF8FA39006FA33C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC372E6D1DF8FB48006FA33C /* OEHomeContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeContoller.swift; sourceTree = "<group>"; };
+		BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEMacro.swift; sourceTree = "<group>"; };
+		BC372E711DF906C6006FA33C /* OEHomeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeCollectionCell.swift; sourceTree = "<group>"; };
+		BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OEHomeCollectionCell.xib; sourceTree = "<group>"; };
 		BCA7CA9C1DF7A89A00CA5EC6 /* OE5Min.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OE5Min.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCA7CA9F1DF7A89B00CA5EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCA7CAA11DF7A89B00CA5EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCA7CAA41DF7A89B00CA5EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		BCA7CAA91DF7A89B00CA5EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BCA7CAAB1DF7A89B00CA5EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA7CAB01DF7A89B00CA5EC6 /* OE5MinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OE5MinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA7CAB41DF7A89B00CA5EC6 /* OE5MinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OE5MinTests.swift; sourceTree = "<group>"; };
 		BCA7CAB61DF7A89B00CA5EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33068C034C4FB756E147628A /* Pods_OE5Min.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +87,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1C66D61DF959610054B610 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BC1C66D71DF9596C0054B610 /* Home.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		BC372E601DF8FA38006FA33C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC372E681DF8FAE9006FA33C /* Base */,
+				BC372E611DF8FA39006FA33C /* Home */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC372E611DF8FA39006FA33C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BC1C66D61DF959610054B610 /* StoryBoard */,
+				BC372E691DF8FB1F006FA33C /* Controller */,
+				BC372E6A1DF8FB1F006FA33C /* Models */,
+				BC372E6B1DF8FB1F006FA33C /* ViewModels */,
+				BC372E6C1DF8FB1F006FA33C /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BC372E621DF8FA39006FA33C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */,
+				BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */,
+				BC372E631DF8FA39006FA33C /* AppDelegate.swift */,
+				BC372E641DF8FA39006FA33C /* Info.plist */,
+				BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		BC372E681DF8FAE9006FA33C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BC372E691DF8FB1F006FA33C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC372E6D1DF8FB48006FA33C /* OEHomeContoller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC372E6A1DF8FB1F006FA33C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC372E6B1DF8FB1F006FA33C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BC372E6C1DF8FB1F006FA33C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC372E711DF906C6006FA33C /* OEHomeCollectionCell.swift */,
+				BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BCA7CA931DF7A89A00CA5EC6 = {
 			isa = PBXGroup;
 			children = (
+				BC0A8C8E1DF95F32008B348C /* MyPlayground.playground */,
 				BCA7CA9E1DF7A89A00CA5EC6 /* OE5Min */,
 				BCA7CAB31DF7A89B00CA5EC6 /* OE5MinTests */,
 				BCA7CABE1DF7A89B00CA5EC6 /* OE5MinUITests */,
 				BCA7CA9D1DF7A89A00CA5EC6 /* Products */,
+				C7BE0769E45B0864B98FFF59 /* Pods */,
+				EDCE3E7FABD4654AC2D8499E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +192,8 @@
 		BCA7CA9E1DF7A89A00CA5EC6 /* OE5Min */ = {
 			isa = PBXGroup;
 			children = (
-				BCA7CA9F1DF7A89B00CA5EC6 /* AppDelegate.swift */,
-				BCA7CAA11DF7A89B00CA5EC6 /* ViewController.swift */,
-				BCA7CAA31DF7A89B00CA5EC6 /* Main.storyboard */,
-				BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */,
-				BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */,
-				BCA7CAAB1DF7A89B00CA5EC6 /* Info.plist */,
+				BC372E601DF8FA38006FA33C /* Classes */,
+				BC372E621DF8FA39006FA33C /* Other */,
 			);
 			path = OE5Min;
 			sourceTree = "<group>";
@@ -125,6 +216,23 @@
 			path = OE5MinUITests;
 			sourceTree = "<group>";
 		};
+		C7BE0769E45B0864B98FFF59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D4358352ACC8114258EBA7D /* Pods-OE5Min.debug.xcconfig */,
+				A1FD8344CF9E9AABDCDAF6A9 /* Pods-OE5Min.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDCE3E7FABD4654AC2D8499E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCA7CAC41DF7A89B00CA5EC6 /* Build configuration list for PBXNativeTarget "OE5Min" */;
 			buildPhases = (
+				E6E306A67CE8EDD8B840D532 /* [CP] Check Pods Manifest.lock */,
 				BCA7CA981DF7A89A00CA5EC6 /* Sources */,
 				BCA7CA991DF7A89A00CA5EC6 /* Frameworks */,
 				BCA7CA9A1DF7A89A00CA5EC6 /* Resources */,
+				E5C10CDF9FC393C069C9288E /* [CP] Embed Pods Frameworks */,
+				A4D91C76A5AA33F50AD20570 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +298,7 @@
 		BCA7CA941DF7A89A00CA5EC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OE;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = gaof;
@@ -232,9 +344,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC372E661DF8FA39006FA33C /* Info.plist in Resources */,
 				BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */,
 				BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */,
-				BCA7CAA51DF7A89B00CA5EC6 /* Main.storyboard in Resources */,
+				BC1C66D81DF9596C0054B610 /* Home.storyboard in Resources */,
+				BC372E741DF906C6006FA33C /* OEHomeCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +368,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A4D91C76A5AA33F50AD20570 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C10CDF9FC393C069C9288E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6E306A67CE8EDD8B840D532 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCA7CA981DF7A89A00CA5EC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCA7CAA21DF7A89B00CA5EC6 /* ViewController.swift in Sources */,
-				BCA7CAA01DF7A89B00CA5EC6 /* AppDelegate.swift in Sources */,
+				BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */,
+				BC372E6E1DF8FB48006FA33C /* OEHomeContoller.swift in Sources */,
+				BC372E731DF906C6006FA33C /* OEHomeCollectionCell.swift in Sources */,
+				BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +460,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BCA7CAA31DF7A89B00CA5EC6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCA7CAA41DF7A89B00CA5EC6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BCA7CAA91DF7A89B00CA5EC6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -410,9 +567,10 @@
 		};
 		BCA7CAC51DF7A89B00CA5EC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4358352ACC8114258EBA7D /* Pods-OE5Min.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OE5Min/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OE5Min/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gaof.OE5Min;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,9 +580,10 @@
 		};
 		BCA7CAC61DF7A89B00CA5EC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1FD8344CF9E9AABDCDAF6A9 /* Pods-OE5Min.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OE5Min/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OE5Min/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gaof.OE5Min;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +664,7 @@
 				BCA7CAC61DF7A89B00CA5EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCA7CAC71DF7A89B00CA5EC6 /* Build configuration list for PBXNativeTarget "OE5MinTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +673,7 @@
 				BCA7CAC91DF7A89B00CA5EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCA7CACA1DF7A89B00CA5EC6 /* Build configuration list for PBXNativeTarget "OE5MinUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +682,7 @@
 				BCA7CACC1DF7A89B00CA5EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
