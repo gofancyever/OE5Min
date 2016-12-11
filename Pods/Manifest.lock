@@ -1,12 +1,15 @@
 PODS:
+  - IBAnimatable (3.1.1)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
+  - IBAnimatable
   - SnapKit (~> 3.0.2)
 
 SPEC CHECKSUMS:
+  IBAnimatable: ccdebebf1d702b08ad0b0a782471f4f14a284e7f
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 30b95a6b81d45d0f47d987c5ecc45eb5d26a2784
+PODFILE CHECKSUM: b69fbcb67d7fd44fd9eb8e9863c545fc9e8f2094
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1
