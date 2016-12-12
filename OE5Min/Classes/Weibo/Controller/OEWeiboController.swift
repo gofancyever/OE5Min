@@ -8,8 +8,9 @@
 
 import UIKit
 let cellHome = "OEWeiboCell"
-class OEWeiboController: OEBaseTableViewController {
 
+class OEWeiboController: OEBaseTableViewController {
+    var navFrame:CGRect?
     var lastScrollPointY:CGFloat = 0;
     
     override func viewDidLoad() {
@@ -17,60 +18,31 @@ class OEWeiboController: OEBaseTableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: cellHome, bundle: nil), forCellReuseIdentifier: cellHome)
+        navFrame = self.navigationController?.navigationBar.frame
         
         
+//        let pan:UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(pan:)))
+//        pan.minimumNumberOfTouches = 1
         
-        let pan:UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector())
-        pan.delegate = self
-        pan.minimumNumberOfTouches = 1
-        tableView.addGestureRecognizer(pan)
+//        pan.delegate = self
+//        tableView.addGestureRecognizer(pan)
         
         
     }
-    func handlePanGesture(pan:UIPanGestureRecognizer){
-        #define NavBarFrame self.navigationController.navigationBar.frame
-        //显示
-        if (translation.y >= 5) {
-            if (self.isHidden) {
-                
-                self.overLay.alpha=0;
-                CGRect navBarFrame=NavBarFrame;
-                CGRect scrollViewFrame=self.scrollView.frame;
-                
-                navBarFrame.origin.y = 20;
-                scrollViewFrame.origin.y += 44;
-                scrollViewFrame.size.height -= 44;
-                
-                [UIView animateWithDuration:0.2 animations:^{
-                    NavBarFrame = navBarFrame;
-                    self.scrollView.frame=scrollViewFrame;                }
-                    }];
-                self.isHidden= NO;
-            }
-        }
-        
-        //隐藏
-        if (translation.y <= -20) {
-            if (!self.isHidden) {
-                CGRect frame =NavBarFrame;
-                CGRect scrollViewFrame=self.scrollView.frame;
-                frame.origin.y = -24;
-                scrollViewFrame.origin.y -= 44;
-                scrollViewFrame.size.height += 44;
-                
-                [UIView animateWithDuration:0.2 animations:^{
-                    NavBarFrame = frame;
-                    self.scrollView.frame=scrollViewFrame;
-
-                    } completion:^(BOOL finished) {
-                    self.overLay.alpha=1;
-                    }];
-                self.isHidden=YES;
-            }
-        }
-        
-
-    }
+//    func handlePanGesture(pan:UIPanGestureRecognizer){
+//        //显示
+//        let translation = pan.translation(in: tableView)
+//        print(translation.y)
+//        var navHeight:CGFloat = 0
+//        if translation.y>0 {//向下
+//            navHeight = 20
+//        }else{//向上
+//            navHeight = -64
+//        }
+//        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
+//            self.navigationController?.navigationBar.frame.origin.y = navHeight
+//        }, completion: nil)
+//    }
 
 }
 extension OEWeiboController: UITableViewDataSource{
@@ -81,7 +53,7 @@ extension OEWeiboController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 20
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
@@ -91,17 +63,27 @@ extension OEWeiboController: UITableViewDelegate {
     
 }
 extension OEWeiboController {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
-        if (lastScrollPointY-scrollView.contentOffset.y)>0 {//向上
-            self.navigationController?.navigationBar.subviews[0].alpha = 0
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        var navHeight:CGFloat = 0
+        if velocity.y>0 {//向下
+            navHeight = -64
+        }else{//向上
+            navHeight = 20
         }
-        else{//向下
-            self.navigationController?.navigationBar.subviews[0].alpha = 1
-        }
-        print(lastScrollPointY-scrollView.contentOffset.y)
-        
-        lastScrollPointY = scrollView.contentOffset.y
-        
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
+            self.navigationController?.navigationBar.frame.origin.y = navHeight
+        }, completion: nil)
     }
 }
+//extension OEWeiboController: UIGestureRecognizerDelegate{
+//    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+//        if gestureRecognizer.self == UIPanGestureRecognizer.self(){
+//           let ges = gestureRecognizer as! UIPanGestureRecognizer
+//            let translation:CGPoint = ges.translation(in: tableView)
+//            return fabs(translation.x)>fabs(translation.y)
+//        }
+//        return true
+//
+//    }
+//}

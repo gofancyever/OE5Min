@@ -13,6 +13,6 @@ class OEBaseNavController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.subviews[0].alpha = 0
-        
     }
+
 }
