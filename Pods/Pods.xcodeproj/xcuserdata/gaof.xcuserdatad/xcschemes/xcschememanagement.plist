@@ -4,20 +4,44 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IBAnimatable.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Pods-OE5Min.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2EC2642E38369D010DC11AB15C9107BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DB37FDD6D9682249FC26FBD3DF9EBE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>61B3954D9A9CA915C36FA31CF237BD03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84257A433733797EE1243DD369180F97</key>
 		<dict>
 			<key>primary</key>
 			<true/>
