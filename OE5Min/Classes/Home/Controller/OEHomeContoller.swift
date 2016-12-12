@@ -15,7 +15,6 @@ class OEHomeContoller: OEBaseTableViewController {
     
     lazy var headerView: OEHeaderView = {
         let headerView = OEHeaderView()
-        
         return headerView
     }()
     
@@ -44,6 +43,7 @@ class OEHomeContoller: OEBaseTableViewController {
         tableView.bounces = false
         let tableViewHeader = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44))
         tableViewHeader.backgroundColor = cellColor
+        tableViewHeader.alpha = 0.8
         tableView.tableHeaderView = tableViewHeader
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "left", style: .plain, target: self, action: #selector(leftItemClick))
         view.addSubview(avatarImgV)
