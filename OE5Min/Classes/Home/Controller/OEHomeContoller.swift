@@ -11,7 +11,7 @@ import UIKit
 
 let sectionHeaderHeight:CGFloat = 44
 let cellColor:UIColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
-class OEHomeContoller: OEBaseTableViewController{
+class OEHomeContoller: OEBaseTableViewController,ConfigHeaderViewProtocol{
     
     
     lazy var avatarImgV: UIImageView = {
@@ -24,13 +24,14 @@ class OEHomeContoller: OEBaseTableViewController{
         super.viewDidLoad()
         initSubViews()
         initConstraints()
-        
+
     }
     
     //MARK:初始化
     func initSubViews(){
         /** HeaderView */
-        
+        configHeaderView(height:200, image: nil, backgroundColor: #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1))
+
         /** tableView */
         tableView.delegate = self
         tableView.dataSource = self
@@ -48,20 +49,22 @@ class OEHomeContoller: OEBaseTableViewController{
     }
     //MARK:初始化布局
     func initConstraints(){
-//        tableView.snp.makeConstraints { (make) in
-//            make.top.equalTo(headerView.snp.centerY).offset(50)
-//            make.bottom.equalTo(view).offset(-20)
-//            make.left.equalTo(view).offset(20)
-//            make.right.equalTo(view).offset(-20)
-//        }
-//        avatarImgV.snp.makeConstraints { (make) in
-//            make.height.width.equalTo(50)
-//            make.centerX.equalTo(headerView)
-//            make.centerY.equalTo(tableView.snp.top)
-//        }
-//        
-//        view.bringSubview(toFront: tableView)
-//        view.bringSubview(toFront: avatarImgV)
+
+
+        tableView.snp.makeConstraints { (make) in
+            make.top.equalTo(150)
+            make.bottom.equalTo(view).offset(-20)
+            make.left.equalTo(view).offset(20)
+            make.right.equalTo(view).offset(-20)
+        }
+        avatarImgV.snp.makeConstraints { (make) in
+            make.height.width.equalTo(50)
+            make.centerX.equalTo(tableView)
+            make.centerY.equalTo(tableView.snp.top)
+        }
+        
+        view.bringSubview(toFront: tableView)
+        view.bringSubview(toFront: avatarImgV)
         
     }
     

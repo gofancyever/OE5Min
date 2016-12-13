@@ -8,9 +8,8 @@
 
 import UIKit
 
-protocol ConfigHeaderView {
-    var headerView:UIView { get }
-    func configHeaderView(toView:UIView,height:CGFloat,image:UIImage?,backgroundColor:UIColor?)
+protocol ConfigHeaderViewProtocol {
+    func configHeaderView(height:CGFloat,image:UIImage?,backgroundColor:UIColor?)
 }
 
 class OEBaseTableViewController: OEBaseViewController {
@@ -26,6 +25,7 @@ class OEBaseTableViewController: OEBaseViewController {
         self.automaticallyAdjustsScrollViewInsets = false
         tableView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
         tableView.separatorStyle = .none
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,16 +34,15 @@ class OEBaseTableViewController: OEBaseViewController {
 
 }
 
-extension ConfigHeaderView {
-    internal var headerView: UIView {
-        let headerView = UIView(frame: CGRect.init())
-        return headerView
-    }
+extension ConfigHeaderViewProtocol where Self:OEBaseTableViewController{
 
-    func configHeaderView(toView view:UIView, height:CGFloat, image: UIImage?, backgroundColor: UIColor?) {
+    func configHeaderView(height:CGFloat, image: UIImage?, backgroundColor: UIColor?) {
+        let headerView = UIView()
         view.addSubview(headerView)
         headerView.snp.makeConstraints { (make) in
-            make.right.left.top.equalTo(view)
+            make.right.equalTo(view)
+            make.left.equalTo(view)
+            make.top.equalTo(view)
             make.height.equalTo(height)
         }
         headerView.backgroundColor = backgroundColor

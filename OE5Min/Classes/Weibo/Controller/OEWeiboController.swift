@@ -9,7 +9,7 @@
 import UIKit
 let cellHome = "OEWeiboCell"
 
-class OEWeiboController: OEBaseTableViewController {
+class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
     var navFrame:CGRect?
     var lastScrollPointY:CGFloat = 0;
     
@@ -20,10 +20,12 @@ class OEWeiboController: OEBaseTableViewController {
         tableView.register(UINib.init(nibName: cellHome, bundle: nil), forCellReuseIdentifier: cellHome)
         navFrame = self.navigationController?.navigationBar.frame
         
-        
-
-        
-        
+        configHeaderView(height: 150, image: nil, backgroundColor: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1))
+        tableView.snp.makeConstraints { (make) in
+            make.top.equalTo(120)
+            make.left.right.bottom.equalTo(view)
+        }
+        view.bringSubview(toFront: tableView)
     }
 
 }
