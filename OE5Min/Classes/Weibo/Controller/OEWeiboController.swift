@@ -21,28 +21,10 @@ class OEWeiboController: OEBaseTableViewController {
         navFrame = self.navigationController?.navigationBar.frame
         
         
-//        let pan:UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(pan:)))
-//        pan.minimumNumberOfTouches = 1
-        
-//        pan.delegate = self
-//        tableView.addGestureRecognizer(pan)
+
         
         
     }
-//    func handlePanGesture(pan:UIPanGestureRecognizer){
-//        //显示
-//        let translation = pan.translation(in: tableView)
-//        print(translation.y)
-//        var navHeight:CGFloat = 0
-//        if translation.y>0 {//向下
-//            navHeight = 20
-//        }else{//向上
-//            navHeight = -64
-//        }
-//        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
-//            self.navigationController?.navigationBar.frame.origin.y = navHeight
-//        }, completion: nil)
-//    }
 
 }
 extension OEWeiboController: UITableViewDataSource{
@@ -76,14 +58,4 @@ extension OEWeiboController {
         }, completion: nil)
     }
 }
-//extension OEWeiboController: UIGestureRecognizerDelegate{
-//    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-//        if gestureRecognizer.self == UIPanGestureRecognizer.self(){
-//           let ges = gestureRecognizer as! UIPanGestureRecognizer
-//            let translation:CGPoint = ges.translation(in: tableView)
-//            return fabs(translation.x)>fabs(translation.y)
-//        }
-//        return true
-//
-//    }
-//}
+
