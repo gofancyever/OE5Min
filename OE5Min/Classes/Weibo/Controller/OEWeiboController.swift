@@ -37,7 +37,6 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
     func initConstraints(){
         tableView.snp.makeConstraints { (make) in
             make.top.equalTo(120)
-            make.top.lessThanOrEqualTo(64)
             make.left.right.bottom.equalTo(view)
         }
         avatarImgV.snp.makeConstraints { (make) in
@@ -69,7 +68,9 @@ extension OEWeiboController: UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
         tableView.snp.updateConstraints { (make) in
-            make.top.equalTo(make.top.)
+            if (120-scrollView.contentOffset.y)>64 {
+            make.top.equalTo(120-scrollView.contentOffset.y)
+            }
         }
         print(scrollView.contentOffset.y)
     }

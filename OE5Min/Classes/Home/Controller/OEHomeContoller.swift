@@ -37,11 +37,13 @@ class OEHomeContoller: OEBaseTableViewController,ConfigHeaderViewProtocol{
         tableView.dataSource = self
         tableView.layer.masksToBounds = true
         tableView.layer.cornerRadius = 4
+        let backgroundImgView = UIImageView(image: UIImage(named:"tv_background"))
+        backgroundImgView.frame = tableView.frame
+        tableView.backgroundView = backgroundImgView
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.bounces = false
         let tableViewHeader = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44))
-        tableViewHeader.alpha = 0.9
-        tableViewHeader.backgroundColor = cellColor
+        tableViewHeader.backgroundColor = UIColor.clear
         tableView.tableHeaderView = tableViewHeader
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "left", style: .plain, target: self, action: #selector(leftItemClick))
         view.addSubview(avatarImgV)
@@ -82,7 +84,7 @@ extension OEHomeContoller:UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         cell?.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
-        cell?.contentView.backgroundColor = cellColor
+        cell?.contentView.backgroundColor = UIColor.clear
         cell?.contentView.alpha = 0.9
         return cell!
     }

@@ -1,15 +1,24 @@
 PODS:
   - IBAnimatable (3.1.1)
+  - ReactiveCocoa (5.0.0-alpha.3):
+    - ReactiveSwift (~> 1.0.0-alpha.3)
+  - ReactiveSwift (1.0.0-alpha.4):
+    - Result (~> 3.0)
+  - Result (3.1.0)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - IBAnimatable
+  - ReactiveCocoa (= 5.0.0-alpha.3)
   - SnapKit (~> 3.0.2)
 
 SPEC CHECKSUMS:
   IBAnimatable: ccdebebf1d702b08ad0b0a782471f4f14a284e7f
+  ReactiveCocoa: d8a03d3deae0dd76410a30589946328d76ab9d2b
+  ReactiveSwift: 3fa49d2db97609ea700cd2b8f1bfbdd162024f97
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: b69fbcb67d7fd44fd9eb8e9863c545fc9e8f2094
+PODFILE CHECKSUM: f2fc57233127a91bfcd9765f45ed4e080489e6cb
 
 COCOAPODS: 1.2.0.beta.1
