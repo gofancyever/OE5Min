@@ -6,27 +6,43 @@
 	<dict>
 		<key>IBAnimatable.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-OE5Min.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2EC2642E38369D010DC11AB15C9107BB</key>
+		<key>30162FC32DB5974C467FC148CD5A68F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -36,17 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61B3954D9A9CA915C36FA31CF237BD03</key>
+		<key>703FA2D39E6F74EDAD507D824CC3B43B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84257A433733797EE1243DD369180F97</key>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA741770197EE3CE6FE318B578F9EC2D</key>
+		<key>D5827F997CBDEAB12BCCA12B330D366A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EDDFB2DC3E27EA645959B277C4FD4E80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1EC65106BD6ACE08176E6D06ECB4C63</key>
 		<dict>
 			<key>primary</key>
 			<true/>

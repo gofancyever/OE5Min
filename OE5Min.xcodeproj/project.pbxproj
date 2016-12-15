@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		1839F9E41DFAE3A0005741B0 /* OEWeiboController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839F9E31DFAE3A0005741B0 /* OEWeiboController.swift */; };
 		1839F9E71DFAE5EC005741B0 /* OEWeiboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839F9E51DFAE5EC005741B0 /* OEWeiboCell.swift */; };
-		1839F9E81DFAE5EC005741B0 /* OEWeiboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1839F9E61DFAE5EC005741B0 /* OEWeiboCell.xib */; };
 		33068C034C4FB756E147628A /* Pods_OE5Min.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */; };
+		BC007D031E026DBB00266675 /* OEImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC007D021E026DBB00266675 /* OEImageCollectionView.swift */; };
+		BC007D051E0270A100266675 /* OEImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC007D041E0270A100266675 /* OEImageCollectionViewCell.swift */; };
+		BC007D071E029E2E00266675 /* OEWeiboTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC007D061E029E2E00266675 /* OEWeiboTextView.swift */; };
 		BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A896F1DFFDA92009765D0 /* OEView.swift */; };
 		BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E631DF8FA39006FA33C /* AppDelegate.swift */; };
 		BC372E661DF8FA39006FA33C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC372E641DF8FA39006FA33C /* Info.plist */; };
@@ -47,10 +49,12 @@
 /* Begin PBXFileReference section */
 		1839F9E31DFAE3A0005741B0 /* OEWeiboController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEWeiboController.swift; sourceTree = "<group>"; };
 		1839F9E51DFAE5EC005741B0 /* OEWeiboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEWeiboCell.swift; sourceTree = "<group>"; };
-		1839F9E61DFAE5EC005741B0 /* OEWeiboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OEWeiboCell.xib; sourceTree = "<group>"; };
 		8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OE5Min.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4358352ACC8114258EBA7D /* Pods-OE5Min.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OE5Min.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min.debug.xcconfig"; sourceTree = "<group>"; };
 		A1FD8344CF9E9AABDCDAF6A9 /* Pods-OE5Min.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OE5Min.release.xcconfig"; path = "Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min.release.xcconfig"; sourceTree = "<group>"; };
+		BC007D021E026DBB00266675 /* OEImageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEImageCollectionView.swift; sourceTree = "<group>"; };
+		BC007D041E0270A100266675 /* OEImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC007D061E029E2E00266675 /* OEWeiboTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEWeiboTextView.swift; sourceTree = "<group>"; };
 		BC0A896F1DFFDA92009765D0 /* OEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEView.swift; sourceTree = "<group>"; };
 		BC0A8C8E1DF95F32008B348C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		BC372E631DF8FA39006FA33C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,10 +139,20 @@
 		1839F9E21DFAE368005741B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC007D011E026DA100266675 /* Base */,
 				1839F9E51DFAE5EC005741B0 /* OEWeiboCell.swift */,
-				1839F9E61DFAE5EC005741B0 /* OEWeiboCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BC007D011E026DA100266675 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BC007D021E026DBB00266675 /* OEImageCollectionView.swift */,
+				BC007D041E0270A100266675 /* OEImageCollectionViewCell.swift */,
+				BC007D061E029E2E00266675 /* OEWeiboTextView.swift */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		BC0A896E1DFFDA60009765D0 /* Extension */ = {
@@ -410,7 +424,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1839F9E81DFAE5EC005741B0 /* OEWeiboCell.xib in Resources */,
 				BC372E661DF8FA39006FA33C /* Info.plist in Resources */,
 				BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */,
 				BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */,
@@ -487,13 +500,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC007D051E0270A100266675 /* OEImageCollectionViewCell.swift in Sources */,
 				BC52E91B1DFE73E600255199 /* OEBaseTableViewController.swift in Sources */,
+				BC007D031E026DBB00266675 /* OEImageCollectionView.swift in Sources */,
 				BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */,
 				BC372E6E1DF8FB48006FA33C /* OEHomeContoller.swift in Sources */,
 				BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */,
 				BC372E731DF906C6006FA33C /* OEHomeCollectionCell.swift in Sources */,
 				1839F9E41DFAE3A0005741B0 /* OEWeiboController.swift in Sources */,
 				BC52E91C1DFE73E600255199 /* OEBaseViewController.swift in Sources */,
+				BC007D071E029E2E00266675 /* OEWeiboTextView.swift in Sources */,
 				BC52E91A1DFE73E600255199 /* OEBaseNavController.swift in Sources */,
 				1839F9E71DFAE5EC005741B0 /* OEWeiboCell.swift in Sources */,
 				BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */,

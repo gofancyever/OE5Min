@@ -7,7 +7,7 @@
 //
 
 import UIKit
-let cellHome = "OEWeiboCell"
+let cellWeibo = "OEWeiboCell"
 
 class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
     
@@ -30,10 +30,13 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
         navFrame = self.navigationController?.navigationBar.frame
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib.init(nibName: cellHome, bundle: nil), forCellReuseIdentifier: cellHome)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 200
+        tableView.register(OEWeiboCell.self, forCellReuseIdentifier: cellWeibo)
         view.addSubview(avatarImgV)
         configHeaderView(height: 150, image: nil, backgroundColor: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1))
     }
+    
     func initConstraints(){
         tableView.snp.makeConstraints { (make) in
             make.top.equalTo(120)
@@ -52,11 +55,9 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
 }
 extension OEWeiboController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellHome)
-        cell?.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellWeibo)
         return cell!
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
@@ -66,7 +67,6 @@ extension OEWeiboController: UITableViewDataSource{
 }
 extension OEWeiboController: UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-
         tableView.snp.updateConstraints { (make) in
             if (120-scrollView.contentOffset.y)>64 {
             make.top.equalTo(120-scrollView.contentOffset.y)
