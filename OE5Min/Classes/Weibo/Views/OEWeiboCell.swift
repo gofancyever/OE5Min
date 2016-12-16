@@ -14,10 +14,19 @@ class OEWeiboCell: UITableViewCell {
         return OEImageCollectionView()
     }()
     
+    lazy var tv_content: OEWeiboTextView = {
+        return OEWeiboTextView()
+    }()
+    
+    lazy var lab_userLabel:OEUserLabel = {
+        return OEUserLabel()
+    }()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        self.selectionStyle = .none
+        
         
         cv_image.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         addSubview(cv_image)
@@ -25,8 +34,19 @@ class OEWeiboCell: UITableViewCell {
             make.top.left.right.equalTo(self)
             make.height.equalTo(120)
         }
-        
-        
+        tv_content.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        addSubview(tv_content)
+        tv_content.snp.makeConstraints { (make) in
+            make.left.right.equalTo(self)
+            make.top.equalTo(cv_image.snp.bottom)
+            make.height.equalTo(50)
+        }
+        addSubview(lab_userLabel)
+        lab_userLabel.snp.makeConstraints { (make) in
+            make.left.right.equalTo(self)
+            make.top.equalTo(tv_content.snp.bottom)
+            make.height.equalTo(50)
+        }
         
     }
     
