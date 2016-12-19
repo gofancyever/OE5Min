@@ -15,26 +15,40 @@ class OEWeiboTextView: UIView {
     }()
     lazy var btn_more: UIButton = {
         let btn = UIButton()
+        btn.addTarget(self, action: #selector(btn_moreClick(btn:)), for: .touchUpInside)
         btn.setTitle("更多", for: .normal)
         self.addSubview(btn)
         return btn
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
-        lab_text.text = "dkfdoqwkkfwqkf"
+        lab_text.numberOfLines = 1
+        lab_text.text = "dkfdoqwkkfwqdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwkf"
         lab_text.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
         addSubview(lab_text)
+        initConstraints()
+        
+    }
+    
+    func btn_moreClick(btn:UIButton){
+        btn.isSelected = true
+        btn.setTitle("收起", for: .normal)
+        lab_text.numberOfLines = 0
+        
+    }
+    
+    
+    func initConstraints(){
         lab_text.snp.makeConstraints { (make) in
             make.left.right.top.equalTo(self)
-            let size = lab_text.sizeThatFits(CGSize(width: lab_text.frame.size.width, height: CGFloat.greatestFiniteMagnitude))
-            make.height.equalTo(size.height)
+            //            let size = lab_text.sizeThatFits(CGSize(width: lab_text.frame.size.width, height: CGFloat.greatestFiniteMagnitude))
+            //            make.height.equalTo(size.height)
         }
         btn_more.snp.makeConstraints { (make) in
             make.left.right.bottom.equalTo(self)
             make.top.equalTo(lab_text.snp.bottom)
             make.height.equalTo(20)
         }
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

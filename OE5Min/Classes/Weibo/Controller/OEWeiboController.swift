@@ -72,7 +72,6 @@ extension OEWeiboController: UITableViewDelegate {
             make.top.equalTo(120-scrollView.contentOffset.y)
             }
         }
-        print(scrollView.contentOffset.y)
     }
 }
 extension OEWeiboController {

@@ -3,7 +3,7 @@
 import UIKit
 import PlaygroundSupport
 import IBAnimatable
-
+import ReactiveCocoa
 
 
 let a = 10
@@ -14,6 +14,7 @@ print(a+b)
 class tableViewController:UIViewController{
     
     let tableView = UITableView(frame: CGRect.init(x: 10, y: 200, width: 200, height: 200), style: .plain)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
@@ -21,7 +22,11 @@ class tableViewController:UIViewController{
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
-        self.view.addSubview(tableView)
+//        self.view.addSubview(tableView)
+        let btn = UIButton(frame: CGRect(x: 20 ,y: 20, width: 44, height: 44))
+        btn.setTitle("test", for: .normal)
+        self.view.addSubview(btn)
+        btn.reactive.trigger(for: .touchUpInside)
     }
     
 
