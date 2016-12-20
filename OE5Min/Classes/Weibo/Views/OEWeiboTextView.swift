@@ -15,28 +15,24 @@ class OEWeiboTextView: UIView {
     }()
     lazy var btn_more: UIButton = {
         let btn = UIButton()
-        btn.addTarget(self, action: #selector(btn_moreClick(btn:)), for: .touchUpInside)
+        btn.setTitle("收起", for: .selected)
         btn.setTitle("更多", for: .normal)
         self.addSubview(btn)
         return btn
     }()
+
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         lab_text.numberOfLines = 1
         lab_text.text = "dkfdoqwkkfwqdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwkf"
         lab_text.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
         addSubview(lab_text)
         initConstraints()
         
-    }
-    
-    func btn_moreClick(btn:UIButton){
-        btn.isSelected = true
-        btn.setTitle("收起", for: .normal)
-        lab_text.numberOfLines = 0
         
     }
-    
     
     func initConstraints(){
         lab_text.snp.makeConstraints { (make) in

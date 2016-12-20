@@ -9,9 +9,8 @@
 import UIKit
 import Foundation
 import SnapKit
-import ReactiveCocoa
 import Kingfisher
-
+import RxSwift
 
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height

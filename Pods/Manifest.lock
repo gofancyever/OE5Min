@@ -2,29 +2,27 @@ PODS:
   - ActiveLabel (0.7.0)
   - IBAnimatable (3.1.1)
   - Kingfisher (3.2.2)
-  - ReactiveCocoa (5.0.0-alpha.3):
-    - ReactiveSwift (~> 1.0.0-alpha.3)
-  - ReactiveSwift (1.0.0-alpha.4):
-    - Result (~> 3.0)
-  - Result (3.1.0)
+  - RxCocoa (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.1)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - ActiveLabel
   - IBAnimatable
   - Kingfisher
-  - ReactiveCocoa (= 5.0.0-alpha.3)
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
   - SnapKit (~> 3.0.2)
 
 SPEC CHECKSUMS:
   ActiveLabel: eb405c5b99275be52fac161f7a55cab1dd672c54
   IBAnimatable: ccdebebf1d702b08ad0b0a782471f4f14a284e7f
   Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
-  ReactiveCocoa: d8a03d3deae0dd76410a30589946328d76ab9d2b
-  ReactiveSwift: 3fa49d2db97609ea700cd2b8f1bfbdd162024f97
-  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: edd107b011e0c2b951ba858cca268384c54307f2
+PODFILE CHECKSUM: 719953c7fb304db3d7bc9e3435b49261d5f354a1
 
 COCOAPODS: 1.2.0.beta.1

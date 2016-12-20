@@ -26,7 +26,20 @@ class tableViewController:UIViewController{
         let btn = UIButton(frame: CGRect(x: 20 ,y: 20, width: 44, height: 44))
         btn.setTitle("test", for: .normal)
         self.view.addSubview(btn)
-        btn.reactive.trigger(for: .touchUpInside)
+        
+        let label = UILabel(frame: CGRect(x: 20, y: 80, width: 100, height: 44))
+        label.text = "dadasdasasdasasdasasdasasdasasdasasdasasdasasdasasdas"
+        label.numberOfLines = 1
+        view.addSubview(label)
+        
+        
+        
+        btn.reactive.trigger(for: .touchUpInside).map { () -> Bool in
+            btn.isSelected = !btn.isSelected
+            return btn.isSelected
+        }.observeValues { (isSelect) in
+         
+        }
     }
     
 
