@@ -39,7 +39,6 @@ class OEWeiboCell: UITableViewCell {
         tv_content.snp.makeConstraints { (make) in
             make.left.right.equalTo(self)
             make.top.equalTo(cv_image.snp.bottom)
-            make.height.equalTo(50)
         }
         addSubview(lab_userLabel)
         lab_userLabel.snp.makeConstraints { (make) in

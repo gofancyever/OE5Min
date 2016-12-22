@@ -56,11 +56,8 @@ class OEUserLabel: UIView {
         lab_content.snp.makeConstraints { (make) in
             make.centerY.equalTo(btn_name)
             make.left.equalTo(btn_name.snp.right).offset(4)
-            
         }
-        
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
