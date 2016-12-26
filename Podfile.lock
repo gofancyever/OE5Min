@@ -1,21 +1,49 @@
 PODS:
   - ActiveLabel (0.7.0)
+  - Alamofire (4.2.0)
   - IBAnimatable (3.1.1)
   - Kingfisher (3.2.2)
   - SnapKit (3.0.2)
+  - UMengUShare/Core (6.1.1):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.1.1)
+  - UMengUShare/Social/Douban (6.1.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/Facebook (6.1.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/Instagram (6.1.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/QQ (6.1.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.1.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.1.1):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.1.1):
+    - UMengUShare/Core
 
 DEPENDENCIES:
   - ActiveLabel
+  - Alamofire (~> 4.0)
   - IBAnimatable
   - Kingfisher
   - SnapKit (~> 3.0.2)
+  - UMengUShare/Social/Douban
+  - UMengUShare/Social/Facebook
+  - UMengUShare/Social/Instagram
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/Sina
+  - UMengUShare/Social/WeChat
+  - UMengUShare/UI
 
 SPEC CHECKSUMS:
   ActiveLabel: eb405c5b99275be52fac161f7a55cab1dd672c54
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   IBAnimatable: ccdebebf1d702b08ad0b0a782471f4f14a284e7f
   Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  UMengUShare: 0a80f54ee06f71f3de7c57764c36339e8bf9b7e7
 
-PODFILE CHECKSUM: 7d40d1487a9f71f8c786eb1f630fbfa52cf13178
+PODFILE CHECKSUM: b19222186bf789f2055ae6c9546cf9dfe1af4605
 
 COCOAPODS: 1.2.0.beta.1
