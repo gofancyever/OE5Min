@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController = OEBaseNavController(rootViewController: homeController)
         self.window?.rootViewController = navController;
         self.window?.makeKeyAndVisible()
-        configUMSocial()
+        cconfigUMSocial()
         
         
         return true
@@ -35,11 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return result
     }
     
-    func configUMSocial() {
-        UMSocialManager.default().umSocialAppkey = "585f42a6a40fa35322002cc6"
-        UMSocialManager.default().setPlaform(.QQ, appKey: "1105908796", appSecret: nil, redirectURL: "http://mobile.umeng.com/social")
+    func cconfigUMSocial() {
+        UMSocialManager.default().openLog(true)
         
-        UMSocialManager.default().setPlaform(.sina, appKey: "84213341", appSecret: "2bd4f77697d67a30843e26360a9aa395", redirectURL: "http://sns.whalecloud.com/sina2/callback")
+        UMSocialManager.default().umSocialAppkey = kUMAppKey
+        
+        UMSocialManager.default().setPlaform(.QQ, appKey:kQQAppKey , appSecret: nil, redirectURL: "http://mobile.umeng.com/social")
+        
+        UMSocialManager.default().setPlaform(.sina, appKey:kSinaAppKey , appSecret: kSinAppSecret, redirectURL: "http://sns.whalecloud.com/sina2/callback")
         
     }
     
