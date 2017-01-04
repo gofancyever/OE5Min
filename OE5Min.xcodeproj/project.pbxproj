@@ -74,6 +74,7 @@
 		BC7C76F31E1B8654003807FC /* OELoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OELoginController.xib; sourceTree = "<group>"; };
 		BC7C76F71E1B8669003807FC /* OENetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OENetWorking.swift; sourceTree = "<group>"; };
 		BC8EC72D1E03D56600AD76EA /* OEUserLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEUserLabel.swift; sourceTree = "<group>"; };
+		BC9A519A1E1CA8E6001A6EAA /* OE5Min-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OE5Min-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCA7CA9C1DF7A89A00CA5EC6 /* OE5Min.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OE5Min.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		BCA7CAA91DF7A89B00CA5EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 				BC372E631DF8FA39006FA33C /* AppDelegate.swift */,
 				BC372E641DF8FA39006FA33C /* Info.plist */,
 				BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */,
+				BC9A519A1E1CA8E6001A6EAA /* OE5Min-Bridging-Header.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -422,6 +424,7 @@
 					BCA7CA9B1DF7A89A00CA5EC6 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = AU2RF5G37H;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					BCA7CAAF1DF7A89B00CA5EC6 = {
@@ -699,12 +702,15 @@
 			baseConfigurationReference = 9D4358352ACC8114258EBA7D /* Pods-OE5Min.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AU2RF5G37H;
 				INFOPLIST_FILE = "$(SRCROOT)/OE5Min/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gaof.OE5Min;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OE5Min/Other/OE5Min-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -714,12 +720,14 @@
 			baseConfigurationReference = A1FD8344CF9E9AABDCDAF6A9 /* Pods-OE5Min.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AU2RF5G37H;
 				INFOPLIST_FILE = "$(SRCROOT)/OE5Min/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gaof.OE5Min;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OE5Min/Other/OE5Min-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

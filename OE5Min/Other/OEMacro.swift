@@ -13,3 +13,5 @@ import Kingfisher
 
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
+
+let kServerUrl = ""
