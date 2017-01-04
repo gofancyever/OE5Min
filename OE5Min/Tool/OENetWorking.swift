@@ -25,7 +25,9 @@ class OENetWorking: NSObject {
             parameters?["name"] = name
             parameters?["iconurl"] = iconurl
             parameters?["uid"] = uid
-            self.requestData(url: "/login", parameters: parameters, responseData: { responseData in
+            
+            let requestUrl = "\(kServerUrl)/login"
+            self.requestData(url:requestUrl ,method:.post, parameters: parameters, responseData: { responseData in
                 response(responseData);
             })
         })
@@ -41,9 +43,8 @@ class OENetWorking: NSObject {
     }
     
     
-    func requestData(url:String,parameters:[String:String]?,responseData:@escaping ([String:Any]?)->()) {
-        let requestUrl = "\(kServerUrl)\(url)"
-        Alamofire.request(requestUrl,method:.post).responseJSON { response in
+    func requestData(url:String,method:HTTPMethod,parameters:[String:String]?,responseData:@escaping ([String:Any]?)->()) {
+        Alamofire.request(url, method: .get, parameters: parameters).responseJSON { response in
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
                 responseData(response.result.value as! [String : Any]?)

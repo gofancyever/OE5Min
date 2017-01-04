@@ -11,6 +11,10 @@ let cellWeibo = "OEWeiboCell"
 
 class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
     
+    lazy var sourceData:Array  = {
+        return [];
+    }()
+    
     lazy var navFrame:CGRect? = {
         return self.navigationController?.navigationBar.frame
     }()
@@ -25,7 +29,25 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
         super.viewDidLoad()
         initSubViews()
         initConstraints()
+        
+        requestData()
     }
+    
+    func requestData() {
+        let parameters = [
+            "access_token":testSinaToken
+        ]
+        OENetWorking.shareNetWorking.requestData(url: kSinaHomeUrl,method:.get, parameters: parameters) { (response) in
+            print(response)
+  
+            let statuses:[Dictionary<String,Any>] = response!["statuses"] as! [Dictionary<String, Any>]
+            self.sourceData.append(statuses.map({ dict -> OEStatusModel in
+                return OEStatusModel(JSON: dict)!
+            }))
+            
+        }
+    }
+    
     func initSubViews(){
         navFrame = self.navigationController?.navigationBar.frame
         tableView.delegate = self

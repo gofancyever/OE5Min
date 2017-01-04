@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-OE5Min.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,11 +57,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4460B812E86FD267B5FEFBD32EDA7C7C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4DB37FDD6D9682249FC26FBD3DF9EBE9</key>
 		<dict>
 			<key>primary</key>
@@ -67,12 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8F1149C9B170CB923BBAA082B03E3753</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A1EBDD3BC77EFE921F5EFB115E0E3B3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C35A165B527D285448E0A659F746827F</key>
+		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC373E430A66D52008022489F22D4E33</key>
 		<dict>
 			<key>primary</key>
 			<true/>

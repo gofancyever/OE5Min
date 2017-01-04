@@ -25,8 +25,8 @@ class OEHomeContoller: OEBaseTableViewController,ConfigHeaderViewProtocol{
         initSubViews()
         initConstraints()
         
-        let loginController = OELoginController()
-        self.present(loginController, animated: true, completion: nil)
+//        let loginController = OELoginController()
+//        self.present(loginController, animated: true, completion: nil)
 
     }
     

@@ -28,6 +28,7 @@
 		BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C76F71E1B8669003807FC /* OENetWorking.swift */; };
 		BC8EC72E1E03D56600AD76EA /* OEUserLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EC72D1E03D56600AD76EA /* OEUserLabel.swift */; };
 		BC9A519F1E1CCAE1001A6EAA /* OECache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A519E1E1CCAE1001A6EAA /* OECache.swift */; };
+		BC9A51A11E1CD3E6001A6EAA /* OEHomeSatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A51A01E1CD3E6001A6EAA /* OEHomeSatusModel.swift */; };
 		BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */; };
 		BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */; };
 		BCA7CAB51DF7A89B00CA5EC6 /* OE5MinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CAB41DF7A89B00CA5EC6 /* OE5MinTests.swift */; };
@@ -77,6 +78,7 @@
 		BC8EC72D1E03D56600AD76EA /* OEUserLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEUserLabel.swift; sourceTree = "<group>"; };
 		BC9A519A1E1CA8E6001A6EAA /* OE5Min-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OE5Min-Bridging-Header.h"; sourceTree = "<group>"; };
 		BC9A519E1E1CCAE1001A6EAA /* OECache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OECache.swift; sourceTree = "<group>"; };
+		BC9A51A01E1CD3E6001A6EAA /* OEHomeSatusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OEHomeSatusModel.swift; path = OE5Min/Tool/OEHomeSatusModel.swift; sourceTree = SOURCE_ROOT; };
 		BCA7CA9C1DF7A89A00CA5EC6 /* OE5Min.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OE5Min.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		BCA7CAA91DF7A89B00CA5EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		BC372E6A1DF8FB1F006FA33C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC9A51A01E1CD3E6001A6EAA /* OEHomeSatusModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				BC52E91B1DFE73E600255199 /* OEBaseTableViewController.swift in Sources */,
 				BC007D031E026DBB00266675 /* OEImageCollectionView.swift in Sources */,
 				BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */,
+				BC9A51A11E1CD3E6001A6EAA /* OEHomeSatusModel.swift in Sources */,
 				BC372E6E1DF8FB48006FA33C /* OEHomeContoller.swift in Sources */,
 				BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */,
 				BC372E731DF906C6006FA33C /* OEHomeCollectionCell.swift in Sources */,

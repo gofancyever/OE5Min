@@ -33,5 +33,6 @@ target 'OE5Min' do
     pod 'Alamofire', '~> 4.0'
 
     pod 'Cache'
+    pod 'ObjectMapper', '~> 2.2'
 end
 
