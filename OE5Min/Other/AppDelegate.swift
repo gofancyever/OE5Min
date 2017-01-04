@@ -21,12 +21,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController = OEBaseNavController(rootViewController: homeController)
         self.window?.rootViewController = navController;
         self.window?.makeKeyAndVisible()
-        
+        configUMSocial()
 
         
         return true
     }
-
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        let result = UMSocialManager.default().handleOpen(url)
+        if !result {
+            
+        }
+        return result
+    }
+    
+    func configUMSocial() {
+        UMSocialManager.default().openLog(true)
+        
+        UMSocialManager.default().umSocialAppkey = kUMAppKey
+        
+        UMSocialManager.default().setPlaform(.QQ, appKey:kQQAppKey , appSecret: nil, redirectURL: "http://mobile.umeng.com/social")
+        
+        UMSocialManager.default().setPlaform(.sina, appKey:kSinaAppKey , appSecret: kSinAppSecret, redirectURL: "http://sns.whalecloud.com/sina2/callback")
+        
+    }
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
