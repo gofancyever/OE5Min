@@ -31,5 +31,7 @@ target 'OE5Min' do
     pod ‘UMengUShare/Social/Instagram'
 
     pod 'Alamofire', '~> 4.0'
+
+    pod 'Cache'
 end
 

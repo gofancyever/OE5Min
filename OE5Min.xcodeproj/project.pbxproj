@@ -27,6 +27,7 @@
 		BC7C76F51E1B8654003807FC /* OELoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7C76F31E1B8654003807FC /* OELoginController.xib */; };
 		BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C76F71E1B8669003807FC /* OENetWorking.swift */; };
 		BC8EC72E1E03D56600AD76EA /* OEUserLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EC72D1E03D56600AD76EA /* OEUserLabel.swift */; };
+		BC9A519F1E1CCAE1001A6EAA /* OECache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A519E1E1CCAE1001A6EAA /* OECache.swift */; };
 		BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */; };
 		BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */; };
 		BCA7CAB51DF7A89B00CA5EC6 /* OE5MinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CAB41DF7A89B00CA5EC6 /* OE5MinTests.swift */; };
@@ -75,6 +76,7 @@
 		BC7C76F71E1B8669003807FC /* OENetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OENetWorking.swift; sourceTree = "<group>"; };
 		BC8EC72D1E03D56600AD76EA /* OEUserLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEUserLabel.swift; sourceTree = "<group>"; };
 		BC9A519A1E1CA8E6001A6EAA /* OE5Min-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OE5Min-Bridging-Header.h"; sourceTree = "<group>"; };
+		BC9A519E1E1CCAE1001A6EAA /* OECache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OECache.swift; sourceTree = "<group>"; };
 		BCA7CA9C1DF7A89A00CA5EC6 /* OE5Min.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OE5Min.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		BCA7CAA91DF7A89B00CA5EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7C76F71E1B8669003807FC /* OENetWorking.swift */,
+				BC9A519E1E1CCAE1001A6EAA /* OECache.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */,
 				BC52E91C1DFE73E600255199 /* OEBaseViewController.swift in Sources */,
 				BC8EC72E1E03D56600AD76EA /* OEUserLabel.swift in Sources */,
+				BC9A519F1E1CCAE1001A6EAA /* OECache.swift in Sources */,
 				BC007D071E029E2E00266675 /* OEWeiboTextView.swift in Sources */,
 				BC52E91A1DFE73E600255199 /* OEBaseNavController.swift in Sources */,
 				1839F9E71DFAE5EC005741B0 /* OEWeiboCell.swift in Sources */,

@@ -1,6 +1,9 @@
 PODS:
   - ActiveLabel (0.7.0)
   - Alamofire (4.2.0)
+  - Cache (2.1.1):
+    - CryptoSwift
+  - CryptoSwift (0.6.7)
   - IBAnimatable (3.1.1)
   - Kingfisher (3.2.2)
   - SnapKit (3.0.2)
@@ -25,6 +28,7 @@ PODS:
 DEPENDENCIES:
   - ActiveLabel
   - Alamofire (~> 4.0)
+  - Cache
   - IBAnimatable
   - Kingfisher
   - SnapKit (~> 3.0.2)
@@ -39,11 +43,13 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   ActiveLabel: eb405c5b99275be52fac161f7a55cab1dd672c54
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Cache: 525a292370641881d7e350f0d451fd276790243a
+  CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
   IBAnimatable: ccdebebf1d702b08ad0b0a782471f4f14a284e7f
   Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   UMengUShare: 0a80f54ee06f71f3de7c57764c36339e8bf9b7e7
 
-PODFILE CHECKSUM: b19222186bf789f2055ae6c9546cf9dfe1af4605
+PODFILE CHECKSUM: f83eeb41d1b317fb488ba11ea241a566d7bc14bc
 
 COCOAPODS: 1.2.0.beta.1

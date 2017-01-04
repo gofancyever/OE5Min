@@ -17,10 +17,14 @@ class OELoginController: UIViewController {
     }
 
     @IBAction func btn_weiboClick(_ sender: UIButton) {
-        OENetWorking.shareNetWorking.login(platformType:.sina)
+        OENetWorking.shareNetWorking.login(platformType: .sina) { (response) in
+            
+        }
     }
     @IBAction func btn_QQClick(_ sender: UIButton) {
-         OENetWorking.shareNetWorking.login(platformType:.QQ)
+         OENetWorking.shareNetWorking.login(platformType: .QQ) { (responseData) in
+            
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

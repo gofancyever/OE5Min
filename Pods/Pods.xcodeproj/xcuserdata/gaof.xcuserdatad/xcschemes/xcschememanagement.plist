@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Cache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CryptoSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IBAnimatable.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +47,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1F6B2C2BF581C60D7B68D081F4CB5F2F</key>
+		<key>211412599AED94810745EFA1400B1C7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4460B812E86FD267B5FEFBD32EDA7C7C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>4DB37FDD6D9682249FC26FBD3DF9EBE9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7DBDF0376AA110E36FDDAE85E5CE4F76</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C35A165B527D285448E0A659F746827F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEE131C1A6C1AFD15D2BB3C5BAD505F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

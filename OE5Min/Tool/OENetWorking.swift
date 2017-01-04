@@ -15,7 +15,7 @@ class OENetWorking: NSObject {
         return shareInstance
     }
     
-    func login(platformType:UMSocialPlatformType) {
+    func login(platformType:UMSocialPlatformType,response:@escaping ([String:Any]?)->()) {
         getUserInfo(platformType: platformType, userInfoResponse: { userInfo in
             print(userInfo)
             let uid:String = userInfo.uid
@@ -25,8 +25,8 @@ class OENetWorking: NSObject {
             parameters?["name"] = name
             parameters?["iconurl"] = iconurl
             parameters?["uid"] = uid
-            self.requestData(url: "/login", parameters: parameters, response: { 
-                
+            self.requestData(url: "/login", parameters: parameters, responseData: { responseData in
+                response(responseData);
             })
         })
     }
@@ -41,11 +41,12 @@ class OENetWorking: NSObject {
     }
     
     
-    func requestData(url:String,parameters:[String:String]?,response:()->()) {
+    func requestData(url:String,parameters:[String:String]?,responseData:@escaping ([String:Any]?)->()) {
         let requestUrl = "\(kServerUrl)\(url)"
         Alamofire.request(requestUrl,method:.post).responseJSON { response in
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
+                responseData(response.result.value as! [String : Any]?)
             }
         }
     }
