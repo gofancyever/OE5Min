@@ -2,6 +2,19 @@
 
 import UIKit
 import PlaygroundSupport
-import RxCocoa
+import Alamofire
+
+
+
+class OENetWorking: NSObject {
+    private static let shareInstance = OENetWorking()
+    class var shareNetWorking:OENetWorking {
+        return shareInstance
+}
+    
+
+    
+    
+}
 
 

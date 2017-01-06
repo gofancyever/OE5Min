@@ -9,11 +9,13 @@
 import UIKit
 import ActiveLabel
 
-typealias ButtonClick = (_ button:UIButton)->()
+typealias ButtonAction = (_ button:UIButton)->()
+
+let kBtnMoreType = "BtnMoreType"
 
 class OEWeiboTextView: UIView {
     
-    var buttonClickBlock: ButtonClick?
+    var buttonClick: ButtonAction?
     
     lazy var lab_text: UILabel = {
         return UILabel()
@@ -31,15 +33,10 @@ class OEWeiboTextView: UIView {
     func btn_moreClick(button:UIButton) {
         button.isSelected = !button.isSelected
         self.lab_text.numberOfLines = button.isSelected ? 0 : 1
-        
-        if buttonClickBlock != nil {
-            buttonClickBlock!(button)
-        }
-        
+        self.cellAction(targetType: kBtnMoreType, target: button)
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         lab_text.numberOfLines = 0
         lab_text.text = "dkfdoqwkkfwqdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwdkfdoqwkf"
         lab_text.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
@@ -50,12 +47,10 @@ class OEWeiboTextView: UIView {
     func initConstraints(){
         lab_text.snp.makeConstraints { (make) in
             make.left.right.top.equalTo(self)
-            //            let size = lab_text.sizeThatFits(CGSize(width: lab_text.frame.size.width, height: CGFloat.greatestFiniteMagnitude))
-            //            make.height.equalTo(size.height)
+            make.bottom.equalTo(btn_more.snp.top)
         }
         btn_more.snp.makeConstraints { (make) in
             make.left.right.bottom.equalTo(self)
-            make.top.equalTo(lab_text.snp.bottom)
             make.height.equalTo(20)
         }
     }

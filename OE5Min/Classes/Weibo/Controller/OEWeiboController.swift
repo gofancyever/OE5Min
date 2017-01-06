@@ -30,7 +30,12 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
         initSubViews()
         initConstraints()
         
-        requestData()
+        tableView.cellAction { (targetType, target, indexPath) in
+            print(indexPath)
+            
+        }
+        
+//        requestData()
     }
     
     func requestData() {
@@ -44,6 +49,7 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
             self.sourceData.append(statuses.map({ dict -> OEStatusModel in
                 return OEStatusModel(JSON: dict)!
             }))
+            print(self.sourceData[0])
             
         }
     }
@@ -53,7 +59,7 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 200
+        tableView.estimatedRowHeight = 80
         tableView.register(OEWeiboCell.self, forCellReuseIdentifier: cellWeibo)
         view.addSubview(avatarImgV)
         configHeaderView(height: 150, image: nil, backgroundColor: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1))
@@ -77,15 +83,16 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
 }
 extension OEWeiboController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellWeibo)
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellWeibo) as! OEWeiboCell
+        cell.tv_content.buttonClick = { button in
+            tableView.reloadRows(at: [indexPath], with: .none)
+        }
+        return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
-    }
+
 }
 extension OEWeiboController: UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -94,6 +101,9 @@ extension OEWeiboController: UITableViewDelegate {
             make.top.equalTo(120-scrollView.contentOffset.y)
             }
         }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }
 extension OEWeiboController {

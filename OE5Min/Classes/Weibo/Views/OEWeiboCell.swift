@@ -22,32 +22,40 @@ class OEWeiboCell: UITableViewCell {
         return OEUserLabel()
     }()
     
+    var buttonMoreDidClick: ButtonAction?
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         self.selectionStyle = .none
         
+        addSubview(cv_image)
+        addSubview(tv_content)
+        addSubview(lab_userLabel)
+        
         
         cv_image.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        addSubview(cv_image)
+        
         cv_image.snp.makeConstraints { (make) in
             make.top.left.right.equalTo(self)
             make.height.equalTo(120)
         }
-        tv_content.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        addSubview(tv_content)
+        
+        
+        tv_content.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
         tv_content.snp.makeConstraints { (make) in
             make.left.right.equalTo(self)
             make.top.equalTo(cv_image.snp.bottom)
-        }
-        addSubview(lab_userLabel)
-        lab_userLabel.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self)
-            make.top.equalTo(tv_content.snp.bottom)
-            make.height.equalTo(50)
+            make.bottom.equalTo(lab_userLabel.snp.top)
         }
         
+        lab_userLabel.snp.makeConstraints { (make) in
+            make.bottom.left.right.equalTo(self)
+            make.height.equalTo(44)
+        }
     }
+
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
