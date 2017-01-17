@@ -56,7 +56,7 @@ class OEImageCollectionView: UIView {
 extension OEImageCollectionView:UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
-        return (images?.count)!
+//        return (images?.count)!
     }
 
 

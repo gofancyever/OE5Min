@@ -33,7 +33,7 @@ private class ClosureWrapper {
 
 extension UITableView:UITableViewDelegate,OETableViewProtocol {
     
-    private var rowAction: RowAction? {
+    var rowAction: RowAction? {
         get {
             let wrapper =
                 objc_getAssociatedObject(self, &icAssociationKey) as? ClosureWrapper
@@ -49,17 +49,14 @@ extension UITableView:UITableViewDelegate,OETableViewProtocol {
     
     func cellAction(rowAction: @escaping (TargetType, Any?, IndexPath?) -> Void) {
         self.rowAction = rowAction
-        self.delegate = self
+
     }
     
     func cellDidClick(targetType:TargetType,target:Any?,indexPath:IndexPath?){
         rowAction?(targetType,target,indexPath)
     }
     
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)
-        rowAction?(kCellActionType,cell!,indexPath)
-    }
+
 }
 
 extension UIView {
@@ -72,9 +69,17 @@ extension UIView {
         return tableView as! UITableView?
     }
     
+    var tableViewCell:UITableViewCell? {
+        var tableViewCell = self
+        while !(tableViewCell is UITableViewCell) {
+            tableViewCell = tableViewCell.superview!
+        }
+        return tableViewCell as? UITableViewCell
+    }
+    
     var indexPath:IndexPath? {
-        if self is UITableViewCell {
-            return tableView?.indexPath(for: self as! UITableViewCell)
+        if self.tableViewCell != nil {
+            return tableView?.indexPath(for: self.tableViewCell!)
         }else{
             return nil
         }

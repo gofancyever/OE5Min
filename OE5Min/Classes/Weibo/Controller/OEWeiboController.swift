@@ -31,8 +31,12 @@ class OEWeiboController: OEBaseTableViewController,ConfigHeaderViewProtocol {
         initConstraints()
         
         tableView.cellAction { (targetType, target, indexPath) in
-            print(indexPath)
             
+            let cell = target as! OEWeiboCell
+            self.moveImages = [""]
+            self.moveView = cell.cv_image
+            let weiboDetailVC = OEWeiboDetailController()
+            self.navigationController?.pushViewController(weiboDetailVC, animated: true)
         }
         
 //        requestData()
@@ -103,7 +107,15 @@ extension OEWeiboController: UITableViewDelegate {
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let cell = tableView.cellForRow(at: indexPath)
+        tableView.rowAction?(kCellActionType,cell!,indexPath)
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let transfrom = CATransform3DMakeTranslation(0, 50, 0)
+        cell.layer.transform = transfrom
+        UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.3, options: .curveLinear, animations: {
+            cell.layer.transform = CATransform3DIdentity
+        }, completion: nil)
     }
 }
 extension OEWeiboController {

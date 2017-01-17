@@ -9,10 +9,12 @@
 import UIKit
 
 class OEBaseNavController: UINavigationController {
-
+    
+    let navDelegate  = OENavigationDelegate()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.subviews[0].alpha = 0
+        self.delegate = navDelegate
     }
 
 }

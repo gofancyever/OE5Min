@@ -21,4 +21,9 @@ extension UIView {
         })
         gradientLayer.locations = locations
     }
+    
+  
+    
+    
+    
 }

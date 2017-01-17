@@ -12,7 +12,19 @@ protocol ConfigHeaderViewProtocol {
     func configHeaderView(height:CGFloat,image:UIImage?,backgroundColor:UIColor?)
 }
 
-class OEBaseTableViewController: OEBaseViewController {
+protocol OEMoveProtocol {
+    var moveImages:[String]? {get set}
+    var moveView:UIView? {get set}
+    var toView:UIView? {get set}
+}
+
+class OEBaseTableViewController: OEBaseViewController,OEMoveProtocol {
+    
+    internal var moveView: UIView?
+    internal var toView: UIView?
+    internal var moveImages: [String]?
+    
+    
 
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: self.view.frame, style: .plain)
@@ -54,7 +66,6 @@ extension ConfigHeaderViewProtocol where Self:OEBaseTableViewController{
             imageView.snp.makeConstraints({ (make) in
                 make.top.bottom.left.right.equalTo(headerView)
             })
-            
         }
     }
 }

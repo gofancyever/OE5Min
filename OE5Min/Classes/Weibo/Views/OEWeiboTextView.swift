@@ -20,21 +20,21 @@ class OEWeiboTextView: UIView {
     lazy var lab_text: UILabel = {
         return UILabel()
     }()
-    lazy var btn_more: UIButton = {
-        let btn = UIButton()
-        btn.setTitle("收起", for: .selected)
-        btn.setTitle("更多", for: .normal)
-        btn.addTarget(self, action: #selector(btn_moreClick(button:)), for: .touchUpInside)
-        self.addSubview(btn)
-        return btn
-    }()
+//    lazy var btn_more: UIButton = {
+//        let btn = UIButton()
+//        btn.setTitle("收起", for: .selected)
+//        btn.setTitle("更多", for: .normal)
+//        btn.addTarget(self, action: #selector(btn_moreClick(button:)), for: .touchUpInside)
+//        self.addSubview(btn)
+//        return btn
+//    }()
     
     
-    func btn_moreClick(button:UIButton) {
-        button.isSelected = !button.isSelected
-        self.lab_text.numberOfLines = button.isSelected ? 0 : 1
-        self.cellAction(targetType: kBtnMoreType, target: button)
-    }
+//    func btn_moreClick(button:UIButton) {
+//        button.isSelected = !button.isSelected
+//        self.lab_text.numberOfLines = button.isSelected ? 0 : 1
+//        self.cellAction(targetType: kBtnMoreType, target: button)
+//    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         lab_text.numberOfLines = 0
@@ -47,12 +47,12 @@ class OEWeiboTextView: UIView {
     func initConstraints(){
         lab_text.snp.makeConstraints { (make) in
             make.left.right.top.equalTo(self)
-            make.bottom.equalTo(btn_more.snp.top)
+            make.bottom.equalTo(self)
         }
-        btn_more.snp.makeConstraints { (make) in
-            make.left.right.bottom.equalTo(self)
-            make.height.equalTo(20)
-        }
+//        btn_more.snp.makeConstraints { (make) in
+//            make.left.right.bottom.equalTo(self)
+//            make.height.equalTo(20)
+//        }
     }
     
     required init?(coder aDecoder: NSCoder) {
