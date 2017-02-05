@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let homeController = OEHomeContoller()
         let navController = OEBaseNavController(rootViewController: homeController)
-        self.window?.rootViewController = navController;
+        
+        
+        configRootViewController(controllerName: "OELoginController")
         self.window?.makeKeyAndVisible()
         configUMSocial()
 
@@ -32,6 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         return result
+    }
+    
+    func configRootViewController(controllerName:String){
+        let className = NSClassFromString("OE5Min.\(controllerName)")! as! UIViewController.Type
+        self.window?.rootViewController = className.init() 
+        
     }
     
     func configUMSocial() {

@@ -1,12 +1,19 @@
 PODS:
   - ActiveLabel (0.7.0)
-  - Alamofire (4.2.0)
+  - Alamofire (4.3.0)
   - Cache (2.1.1):
     - CryptoSwift
   - CryptoSwift (0.6.7)
   - IBAnimatable (3.1.1)
   - Kingfisher (3.2.2)
+  - lottie-ios (1.0.0)
+  - Moya (8.0.2):
+    - Moya/Core (= 8.0.2)
+  - Moya/Core (8.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
   - ObjectMapper (2.2.2)
+  - Result (3.1.0)
   - SnapKit (3.0.2)
   - UMengUShare/Core (6.1.1):
     - UMengUShare/Network
@@ -28,10 +35,11 @@ PODS:
 
 DEPENDENCIES:
   - ActiveLabel
-  - Alamofire (~> 4.0)
   - Cache
   - IBAnimatable
   - Kingfisher
+  - lottie-ios
+  - Moya (= 8.0.2)
   - ObjectMapper (~> 2.2)
   - SnapKit (~> 3.0.2)
   - UMengUShare/Social/Douban
@@ -44,15 +52,18 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   ActiveLabel: eb405c5b99275be52fac161f7a55cab1dd672c54
-  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Cache: 525a292370641881d7e350f0d451fd276790243a
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
   IBAnimatable: ccdebebf1d702b08ad0b0a782471f4f14a284e7f
   Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
+  lottie-ios: c40d67c1481d6fb9fa24fe46731ac823f5f6675b
+  Moya: 47f61da5b634aa71f676431b64ee0f81e976296d
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   UMengUShare: 0a80f54ee06f71f3de7c57764c36339e8bf9b7e7
 
-PODFILE CHECKSUM: 6346fc8576401f199b171eee9addc3cc046032ae
+PODFILE CHECKSUM: 709a884b9167005f8295cfa13c6052c37222215e
 
 COCOAPODS: 1.2.0.beta.1

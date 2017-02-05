@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1839F9E41DFAE3A0005741B0 /* OEWeiboController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839F9E31DFAE3A0005741B0 /* OEWeiboController.swift */; };
-		1839F9E71DFAE5EC005741B0 /* OEWeiboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839F9E51DFAE5EC005741B0 /* OEWeiboCell.swift */; };
 		33068C034C4FB756E147628A /* Pods_OE5Min.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */; };
-		BC007D031E026DBB00266675 /* OEImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC007D021E026DBB00266675 /* OEImageCollectionView.swift */; };
-		BC007D051E0270A100266675 /* OEImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC007D041E0270A100266675 /* OEImageCollectionViewCell.swift */; };
-		BC007D071E029E2E00266675 /* OEWeiboTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC007D061E029E2E00266675 /* OEWeiboTextView.swift */; };
 		BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A896F1DFFDA92009765D0 /* OEView.swift */; };
 		BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E631DF8FA39006FA33C /* AppDelegate.swift */; };
 		BC372E661DF8FA39006FA33C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC372E641DF8FA39006FA33C /* Info.plist */; };
@@ -20,23 +15,20 @@
 		BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */; };
 		BC372E731DF906C6006FA33C /* OEHomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E711DF906C6006FA33C /* OEHomeCollectionCell.swift */; };
 		BC372E741DF906C6006FA33C /* OEHomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */; };
+		BC52E6E51E471A9A00A65AEB /* login_anim.json in Resources */ = {isa = PBXBuildFile; fileRef = BC52E6E41E471A9A00A65AEB /* login_anim.json */; };
+		BC52E6E71E471AC000A65AEB /* OELoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52E6E61E471AC000A65AEB /* OELoginController.swift */; };
 		BC52E91A1DFE73E600255199 /* OEBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52E9171DFE73E600255199 /* OEBaseNavController.swift */; };
 		BC52E91B1DFE73E600255199 /* OEBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52E9181DFE73E600255199 /* OEBaseTableViewController.swift */; };
 		BC52E91C1DFE73E600255199 /* OEBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52E9191DFE73E600255199 /* OEBaseViewController.swift */; };
 		BC7BE0CB1E1FBA1600E8EA32 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7BE0CA1E1FBA1600E8EA32 /* UITableView+Extension.swift */; };
-		BC7C76F41E1B8654003807FC /* OELoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C76F21E1B8654003807FC /* OELoginController.swift */; };
-		BC7C76F51E1B8654003807FC /* OELoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7C76F31E1B8654003807FC /* OELoginController.xib */; };
 		BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C76F71E1B8669003807FC /* OENetWorking.swift */; };
-		BC8EC72E1E03D56600AD76EA /* OEUserLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EC72D1E03D56600AD76EA /* OEUserLabel.swift */; };
 		BC9A519F1E1CCAE1001A6EAA /* OECache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A519E1E1CCAE1001A6EAA /* OECache.swift */; };
-		BC9A51A11E1CD3E6001A6EAA /* OEHomeSatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A51A01E1CD3E6001A6EAA /* OEHomeSatusModel.swift */; };
 		BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */; };
 		BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */; };
 		BCA7CAB51DF7A89B00CA5EC6 /* OE5MinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CAB41DF7A89B00CA5EC6 /* OE5MinTests.swift */; };
 		BCA7CAC01DF7A89B00CA5EC6 /* OE5MinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CABF1DF7A89B00CA5EC6 /* OE5MinUITests.swift */; };
 		BCDB2C961E24C29800FB0E0E /* OENavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB2C951E24C29800FB0E0E /* OENavigationDelegate.swift */; };
 		BCDB2C981E24C2CF00FB0E0E /* OEControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB2C971E24C2CF00FB0E0E /* OEControllerTransition.swift */; };
-		BCDB2C9A1E24C52E00FB0E0E /* OEWeiboDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB2C991E24C52E00FB0E0E /* OEWeiboDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1839F9E31DFAE3A0005741B0 /* OEWeiboController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEWeiboController.swift; sourceTree = "<group>"; };
-		1839F9E51DFAE5EC005741B0 /* OEWeiboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEWeiboCell.swift; sourceTree = "<group>"; };
 		8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OE5Min.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4358352ACC8114258EBA7D /* Pods-OE5Min.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OE5Min.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min.debug.xcconfig"; sourceTree = "<group>"; };
 		A1FD8344CF9E9AABDCDAF6A9 /* Pods-OE5Min.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OE5Min.release.xcconfig"; path = "Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min.release.xcconfig"; sourceTree = "<group>"; };
-		BC007D021E026DBB00266675 /* OEImageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEImageCollectionView.swift; sourceTree = "<group>"; };
-		BC007D041E0270A100266675 /* OEImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		BC007D061E029E2E00266675 /* OEWeiboTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEWeiboTextView.swift; sourceTree = "<group>"; };
 		BC0A896F1DFFDA92009765D0 /* OEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEView.swift; sourceTree = "<group>"; };
 		BC0A8C8E1DF95F32008B348C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		BC372E631DF8FA39006FA33C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,17 +60,15 @@
 		BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEMacro.swift; sourceTree = "<group>"; };
 		BC372E711DF906C6006FA33C /* OEHomeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeCollectionCell.swift; sourceTree = "<group>"; };
 		BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OEHomeCollectionCell.xib; sourceTree = "<group>"; };
+		BC52E6E41E471A9A00A65AEB /* login_anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login_anim.json; sourceTree = "<group>"; };
+		BC52E6E61E471AC000A65AEB /* OELoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OELoginController.swift; sourceTree = "<group>"; };
 		BC52E9171DFE73E600255199 /* OEBaseNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEBaseNavController.swift; sourceTree = "<group>"; };
 		BC52E9181DFE73E600255199 /* OEBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEBaseTableViewController.swift; sourceTree = "<group>"; };
 		BC52E9191DFE73E600255199 /* OEBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEBaseViewController.swift; sourceTree = "<group>"; };
 		BC7BE0CA1E1FBA1600E8EA32 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		BC7C76F21E1B8654003807FC /* OELoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OELoginController.swift; sourceTree = "<group>"; };
-		BC7C76F31E1B8654003807FC /* OELoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OELoginController.xib; sourceTree = "<group>"; };
 		BC7C76F71E1B8669003807FC /* OENetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OENetWorking.swift; sourceTree = "<group>"; };
-		BC8EC72D1E03D56600AD76EA /* OEUserLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEUserLabel.swift; sourceTree = "<group>"; };
 		BC9A519A1E1CA8E6001A6EAA /* OE5Min-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OE5Min-Bridging-Header.h"; sourceTree = "<group>"; };
 		BC9A519E1E1CCAE1001A6EAA /* OECache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OECache.swift; sourceTree = "<group>"; };
-		BC9A51A01E1CD3E6001A6EAA /* OEHomeSatusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OEHomeSatusModel.swift; path = OE5Min/Tool/OEHomeSatusModel.swift; sourceTree = SOURCE_ROOT; };
 		BCA7CA9C1DF7A89A00CA5EC6 /* OE5Min.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OE5Min.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		BCA7CAA91DF7A89B00CA5EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,7 +80,6 @@
 		BCA7CAC11DF7A89B00CA5EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCDB2C951E24C29800FB0E0E /* OENavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OENavigationDelegate.swift; sourceTree = "<group>"; };
 		BCDB2C971E24C2CF00FB0E0E /* OEControllerTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEControllerTransition.swift; sourceTree = "<group>"; };
-		BCDB2C991E24C52E00FB0E0E /* OEWeiboDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEWeiboDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,60 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1839F9DE1DFAE368005741B0 /* Weibo */ = {
-			isa = PBXGroup;
-			children = (
-				1839F9DF1DFAE368005741B0 /* Controller */,
-				1839F9E01DFAE368005741B0 /* Models */,
-				1839F9E11DFAE368005741B0 /* ViewModels */,
-				1839F9E21DFAE368005741B0 /* Views */,
-			);
-			path = Weibo;
-			sourceTree = "<group>";
-		};
-		1839F9DF1DFAE368005741B0 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				1839F9E31DFAE3A0005741B0 /* OEWeiboController.swift */,
-				BCDB2C991E24C52E00FB0E0E /* OEWeiboDetailController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		1839F9E01DFAE368005741B0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		1839F9E11DFAE368005741B0 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		1839F9E21DFAE368005741B0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BC007D011E026DA100266675 /* Base */,
-				1839F9E51DFAE5EC005741B0 /* OEWeiboCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BC007D011E026DA100266675 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				BC007D021E026DBB00266675 /* OEImageCollectionView.swift */,
-				BC007D041E0270A100266675 /* OEImageCollectionViewCell.swift */,
-				BC007D061E029E2E00266675 /* OEWeiboTextView.swift */,
-				BC8EC72D1E03D56600AD76EA /* OEUserLabel.swift */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
 		BC0A896E1DFFDA60009765D0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +130,6 @@
 				BC7C76F01E1B8654003807FC /* Login */,
 				BC52E9161DFE73E600255199 /* Base */,
 				BC372E611DF8FA39006FA33C /* Home */,
-				1839F9DE1DFAE368005741B0 /* Weibo */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -220,6 +149,7 @@
 		BC372E621DF8FA39006FA33C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BC52E6E31E471A9200A65AEB /* source */,
 				BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */,
 				BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */,
 				BC372E631DF8FA39006FA33C /* AppDelegate.swift */,
@@ -241,7 +171,6 @@
 		BC372E6A1DF8FB1F006FA33C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BC9A51A01E1CD3E6001A6EAA /* OEHomeSatusModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,6 +189,14 @@
 				BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BC52E6E31E471A9200A65AEB /* source */ = {
+			isa = PBXGroup;
+			children = (
+				BC52E6E41E471A9A00A65AEB /* login_anim.json */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 		BC52E9161DFE73E600255199 /* Base */ = {
@@ -285,8 +222,7 @@
 		BC7C76F11E1B8654003807FC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BC7C76F21E1B8654003807FC /* OELoginController.swift */,
-				BC7C76F31E1B8654003807FC /* OELoginController.xib */,
+				BC52E6E61E471AC000A65AEB /* OELoginController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -483,10 +419,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC372E661DF8FA39006FA33C /* Info.plist in Resources */,
-				BC7C76F51E1B8654003807FC /* OELoginController.xib in Resources */,
 				BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */,
 				BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */,
 				BC372E741DF906C6006FA33C /* OEHomeCollectionCell.xib in Resources */,
+				BC52E6E51E471A9A00A65AEB /* login_anim.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,27 +495,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC007D051E0270A100266675 /* OEImageCollectionViewCell.swift in Sources */,
-				BC7C76F41E1B8654003807FC /* OELoginController.swift in Sources */,
 				BC7BE0CB1E1FBA1600E8EA32 /* UITableView+Extension.swift in Sources */,
 				BC52E91B1DFE73E600255199 /* OEBaseTableViewController.swift in Sources */,
-				BC007D031E026DBB00266675 /* OEImageCollectionView.swift in Sources */,
 				BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */,
-				BC9A51A11E1CD3E6001A6EAA /* OEHomeSatusModel.swift in Sources */,
 				BC372E6E1DF8FB48006FA33C /* OEHomeContoller.swift in Sources */,
 				BCDB2C961E24C29800FB0E0E /* OENavigationDelegate.swift in Sources */,
 				BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */,
+				BC52E6E71E471AC000A65AEB /* OELoginController.swift in Sources */,
 				BCDB2C981E24C2CF00FB0E0E /* OEControllerTransition.swift in Sources */,
 				BC372E731DF906C6006FA33C /* OEHomeCollectionCell.swift in Sources */,
-				1839F9E41DFAE3A0005741B0 /* OEWeiboController.swift in Sources */,
-				BCDB2C9A1E24C52E00FB0E0E /* OEWeiboDetailController.swift in Sources */,
 				BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */,
 				BC52E91C1DFE73E600255199 /* OEBaseViewController.swift in Sources */,
-				BC8EC72E1E03D56600AD76EA /* OEUserLabel.swift in Sources */,
 				BC9A519F1E1CCAE1001A6EAA /* OECache.swift in Sources */,
-				BC007D071E029E2E00266675 /* OEWeiboTextView.swift in Sources */,
 				BC52E91A1DFE73E600255199 /* OEBaseNavController.swift in Sources */,
-				1839F9E71DFAE5EC005741B0 /* OEWeiboCell.swift in Sources */,
 				BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

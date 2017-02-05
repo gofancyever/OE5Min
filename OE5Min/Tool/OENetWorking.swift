@@ -7,49 +7,12 @@
 //
 
 import UIKit
-import Alamofire
+
 
 class OENetWorking: NSObject {
     private static let shareInstance = OENetWorking()
     class var shareNetWorking:OENetWorking {
         return shareInstance
-    }
-    
-    func login(platformType:UMSocialPlatformType,response:@escaping ([String:Any]?)->()) {
-        getUserInfo(platformType: platformType, userInfoResponse: { userInfo in
-            print(userInfo)
-            let uid:String = userInfo.uid
-            let iconurl:String = userInfo.iconurl
-            let name:String = userInfo.name
-            var parameters:Dictionary<String,String>?
-            parameters?["name"] = name
-            parameters?["iconurl"] = iconurl
-            parameters?["uid"] = uid
-            
-            let requestUrl = "\(kServerUrl)/login"
-            self.requestData(url:requestUrl ,method:.post, parameters: parameters, responseData: { responseData in
-                response(responseData);
-            })
-        })
-    }
-    
-    private func getUserInfo(platformType:UMSocialPlatformType,userInfoResponse:@escaping (_ userInfoResponse:UMSocialUserInfoResponse)->()) {
-        UMSocialManager.default().getUserInfo(with: platformType, currentViewController: self, completion: { result,error in
-            if result != nil {
-                let userInfo:UMSocialUserInfoResponse = result as! UMSocialUserInfoResponse
-                userInfoResponse(userInfo)
-            }
-        })
-    }
-    
-    
-    func requestData(url:String,method:HTTPMethod,parameters:[String:String]?,responseData:@escaping ([String:Any]?)->()) {
-        Alamofire.request(url, method: .get, parameters: parameters).responseJSON { response in
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
-                responseData(response.result.value as! [String : Any]?)
-            }
-        }
     }
     
     

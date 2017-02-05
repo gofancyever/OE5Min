@@ -92,7 +92,6 @@ extension OEHomeContoller:UITableViewDataSource,UITableViewDelegate {
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let weiboController = OEWeiboController()
-        navigationController?.pushViewController(weiboController, animated: true)
+        
     }
 }

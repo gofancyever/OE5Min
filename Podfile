@@ -30,9 +30,10 @@ target 'OE5Min' do
     # 集成Instagram
     pod ‘UMengUShare/Social/Instagram'
 
-    pod 'Alamofire', '~> 4.0'
+    pod 'Moya', '8.0.2'
 
     pod 'Cache'
     pod 'ObjectMapper', '~> 2.2'
+    pod 'lottie-ios'
 end
 
