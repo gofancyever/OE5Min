@@ -11,11 +11,13 @@
 		BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A896F1DFFDA92009765D0 /* OEView.swift */; };
 		BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E631DF8FA39006FA33C /* AppDelegate.swift */; };
 		BC372E661DF8FA39006FA33C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC372E641DF8FA39006FA33C /* Info.plist */; };
-		BC372E6E1DF8FB48006FA33C /* OEHomeContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E6D1DF8FB48006FA33C /* OEHomeContoller.swift */; };
 		BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */; };
-		BC372E731DF906C6006FA33C /* OEHomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E711DF906C6006FA33C /* OEHomeCollectionCell.swift */; };
-		BC372E741DF906C6006FA33C /* OEHomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */; };
-		BC52E6E51E471A9A00A65AEB /* login_anim.json in Resources */ = {isa = PBXBuildFile; fileRef = BC52E6E41E471A9A00A65AEB /* login_anim.json */; };
+		BC49C5A81E4805DA00983F53 /* OELoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC49C5A71E4805DA00983F53 /* OELoginView.xib */; };
+		BC49C5AB1E4812BA00983F53 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC49C5AA1E4812BA00983F53 /* Login.storyboard */; };
+		BC49C5B61E48225F00983F53 /* OESettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49C5B21E48225F00983F53 /* OESettingController.swift */; };
+		BC49C5B71E48225F00983F53 /* OESetCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49C5B41E48225F00983F53 /* OESetCollectionCell.swift */; };
+		BC49C5B81E48225F00983F53 /* OESetCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC49C5B51E48225F00983F53 /* OESetCollectionCell.xib */; };
+		BC49C5BA1E48243000983F53 /* OEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49C5B91E48243000983F53 /* OEHomeController.swift */; };
 		BC52E6E71E471AC000A65AEB /* OELoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52E6E61E471AC000A65AEB /* OELoginController.swift */; };
 		BC52E91A1DFE73E600255199 /* OEBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52E9171DFE73E600255199 /* OEBaseNavController.swift */; };
 		BC52E91B1DFE73E600255199 /* OEBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52E9181DFE73E600255199 /* OEBaseTableViewController.swift */; };
@@ -56,11 +58,13 @@
 		BC0A8C8E1DF95F32008B348C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		BC372E631DF8FA39006FA33C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC372E641DF8FA39006FA33C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC372E6D1DF8FB48006FA33C /* OEHomeContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeContoller.swift; sourceTree = "<group>"; };
 		BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEMacro.swift; sourceTree = "<group>"; };
-		BC372E711DF906C6006FA33C /* OEHomeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeCollectionCell.swift; sourceTree = "<group>"; };
-		BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OEHomeCollectionCell.xib; sourceTree = "<group>"; };
-		BC52E6E41E471A9A00A65AEB /* login_anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login_anim.json; sourceTree = "<group>"; };
+		BC49C5A71E4805DA00983F53 /* OELoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OELoginView.xib; sourceTree = "<group>"; };
+		BC49C5AA1E4812BA00983F53 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BC49C5B21E48225F00983F53 /* OESettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OESettingController.swift; sourceTree = "<group>"; };
+		BC49C5B41E48225F00983F53 /* OESetCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OESetCollectionCell.swift; sourceTree = "<group>"; };
+		BC49C5B51E48225F00983F53 /* OESetCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OESetCollectionCell.xib; sourceTree = "<group>"; };
+		BC49C5B91E48243000983F53 /* OEHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeController.swift; sourceTree = "<group>"; };
 		BC52E6E61E471AC000A65AEB /* OELoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OELoginController.swift; sourceTree = "<group>"; };
 		BC52E9171DFE73E600255199 /* OEBaseNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEBaseNavController.swift; sourceTree = "<group>"; };
 		BC52E9181DFE73E600255199 /* OEBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEBaseTableViewController.swift; sourceTree = "<group>"; };
@@ -117,33 +121,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		BC1C66D61DF959610054B610 /* StoryBoard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StoryBoard;
-			sourceTree = "<group>";
-		};
 		BC372E601DF8FA38006FA33C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BC49C5B01E48225F00983F53 /* Setting */,
+				BC49C5AC1E48223300983F53 /* Home */,
 				BC7C76F01E1B8654003807FC /* Login */,
 				BC52E9161DFE73E600255199 /* Base */,
-				BC372E611DF8FA39006FA33C /* Home */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		BC372E611DF8FA39006FA33C /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				BC1C66D61DF959610054B610 /* StoryBoard */,
-				BC372E691DF8FB1F006FA33C /* Controller */,
-				BC372E6A1DF8FB1F006FA33C /* Models */,
-				BC372E6B1DF8FB1F006FA33C /* ViewModels */,
-				BC372E6C1DF8FB1F006FA33C /* Views */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		BC372E621DF8FA39006FA33C /* Other */ = {
@@ -160,33 +146,76 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		BC372E691DF8FB1F006FA33C /* Controller */ = {
+		BC49C5A61E4805B000983F53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BC372E6D1DF8FB48006FA33C /* OEHomeContoller.swift */,
+				BC49C5A71E4805DA00983F53 /* OELoginView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC49C5A91E4812B100983F53 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BC49C5AA1E4812BA00983F53 /* Login.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		BC49C5AC1E48223300983F53 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BC49C5AD1E48223300983F53 /* Controllers */,
+				BC49C5AE1E48223300983F53 /* StoryBoard */,
+				BC49C5AF1E48223300983F53 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BC49C5AD1E48223300983F53 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC49C5B91E48243000983F53 /* OEHomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BC49C5AE1E48223300983F53 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		BC49C5AF1E48223300983F53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC49C5B01E48225F00983F53 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BC49C5B11E48225F00983F53 /* Controller */,
+				BC49C5B31E48225F00983F53 /* Views */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		BC49C5B11E48225F00983F53 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC49C5B21E48225F00983F53 /* OESettingController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		BC372E6A1DF8FB1F006FA33C /* Models */ = {
+		BC49C5B31E48225F00983F53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		BC372E6B1DF8FB1F006FA33C /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		BC372E6C1DF8FB1F006FA33C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BC372E711DF906C6006FA33C /* OEHomeCollectionCell.swift */,
-				BC372E721DF906C6006FA33C /* OEHomeCollectionCell.xib */,
+				BC49C5B41E48225F00983F53 /* OESetCollectionCell.swift */,
+				BC49C5B51E48225F00983F53 /* OESetCollectionCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,7 +223,6 @@
 		BC52E6E31E471A9200A65AEB /* source */ = {
 			isa = PBXGroup;
 			children = (
-				BC52E6E41E471A9A00A65AEB /* login_anim.json */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -214,6 +242,8 @@
 		BC7C76F01E1B8654003807FC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				BC49C5A91E4812B100983F53 /* StoryBoard */,
+				BC49C5A61E4805B000983F53 /* Views */,
 				BC7C76F11E1B8654003807FC /* Controllers */,
 			);
 			path = Login;
@@ -418,11 +448,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC49C5A81E4805DA00983F53 /* OELoginView.xib in Resources */,
 				BC372E661DF8FA39006FA33C /* Info.plist in Resources */,
+				BC49C5AB1E4812BA00983F53 /* Login.storyboard in Resources */,
 				BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */,
+				BC49C5B81E48225F00983F53 /* OESetCollectionCell.xib in Resources */,
 				BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */,
-				BC372E741DF906C6006FA33C /* OEHomeCollectionCell.xib in Resources */,
-				BC52E6E51E471A9A00A65AEB /* login_anim.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,19 +526,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC49C5B61E48225F00983F53 /* OESettingController.swift in Sources */,
 				BC7BE0CB1E1FBA1600E8EA32 /* UITableView+Extension.swift in Sources */,
 				BC52E91B1DFE73E600255199 /* OEBaseTableViewController.swift in Sources */,
 				BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */,
-				BC372E6E1DF8FB48006FA33C /* OEHomeContoller.swift in Sources */,
+				BC49C5BA1E48243000983F53 /* OEHomeController.swift in Sources */,
 				BCDB2C961E24C29800FB0E0E /* OENavigationDelegate.swift in Sources */,
 				BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */,
 				BC52E6E71E471AC000A65AEB /* OELoginController.swift in Sources */,
 				BCDB2C981E24C2CF00FB0E0E /* OEControllerTransition.swift in Sources */,
-				BC372E731DF906C6006FA33C /* OEHomeCollectionCell.swift in Sources */,
 				BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */,
 				BC52E91C1DFE73E600255199 /* OEBaseViewController.swift in Sources */,
 				BC9A519F1E1CCAE1001A6EAA /* OECache.swift in Sources */,
 				BC52E91A1DFE73E600255199 /* OEBaseNavController.swift in Sources */,
+				BC49C5B71E48225F00983F53 /* OESetCollectionCell.swift in Sources */,
 				BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

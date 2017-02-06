@@ -35,5 +35,7 @@ target 'OE5Min' do
     pod 'Cache'
     pod 'ObjectMapper', '~> 2.2'
     pod 'lottie-ios'
+    pod 'RxSwift',    '~> 3.0'
+    pod 'RxCocoa',    '~> 3.0'
 end
 

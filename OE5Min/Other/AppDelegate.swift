@@ -17,11 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let homeController = OEHomeContoller()
-        let navController = OEBaseNavController(rootViewController: homeController)
-        
-        
-        configRootViewController(controllerName: "OELoginController")
+        configRootViewController(controllerName: "OEHomeController")
         self.window?.makeKeyAndVisible()
         configUMSocial()
 
@@ -37,9 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func configRootViewController(controllerName:String){
-        let className = NSClassFromString("OE5Min.\(controllerName)")! as! UIViewController.Type
-        self.window?.rootViewController = className.init() 
-        
+        if NSClassFromString("OE5Min.\(controllerName)")! is OELoginController.Type {
+            let className = NSClassFromString("OE5Min.\(controllerName)")! as! OELoginController.Type
+                self.window?.rootViewController = className.init()
+        }else{
+            let className = NSClassFromString("OE5Min.\(controllerName)")! as! UIViewController.Type
+            let navController = OEBaseNavController(rootViewController: className.init())
+            self.window?.rootViewController = navController
+        }
     }
     
     func configUMSocial() {
