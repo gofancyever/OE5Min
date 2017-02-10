@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		33068C034C4FB756E147628A /* Pods_OE5Min.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */; };
 		BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A896F1DFFDA92009765D0 /* OEView.swift */; };
+		BC2B7FBC1E49692700480B3D /* OEHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7FBA1E49692600480B3D /* OEHomeCell.swift */; };
+		BC2B7FBD1E49692700480B3D /* OEHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2B7FBB1E49692600480B3D /* OEHomeCell.xib */; };
 		BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E631DF8FA39006FA33C /* AppDelegate.swift */; };
 		BC372E661DF8FA39006FA33C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC372E641DF8FA39006FA33C /* Info.plist */; };
 		BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */; };
+		BC468F9E1E4DBC9100FBFEF4 /* OEContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC468F9D1E4DBC8F00FBFEF4 /* OEContentView.swift */; };
+		BC468FA31E4DBD3000FBFEF4 /* OEPaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC468FA21E4DBD3000FBFEF4 /* OEPaperModel.swift */; };
 		BC49C5A81E4805DA00983F53 /* OELoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC49C5A71E4805DA00983F53 /* OELoginView.xib */; };
 		BC49C5AB1E4812BA00983F53 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC49C5AA1E4812BA00983F53 /* Login.storyboard */; };
 		BC49C5B61E48225F00983F53 /* OESettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49C5B21E48225F00983F53 /* OESettingController.swift */; };
@@ -24,11 +28,15 @@
 		BC52E91C1DFE73E600255199 /* OEBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52E9191DFE73E600255199 /* OEBaseViewController.swift */; };
 		BC7BE0CB1E1FBA1600E8EA32 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7BE0CA1E1FBA1600E8EA32 /* UITableView+Extension.swift */; };
 		BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C76F71E1B8669003807FC /* OENetWorking.swift */; };
+		BC7CE11C1E4C39DA009B9C39 /* favorite.json in Resources */ = {isa = PBXBuildFile; fileRef = BC7CE11B1E4C39DA009B9C39 /* favorite.json */; };
+		BC8978811E4AE9460080A527 /* OEHomeDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8978801E4AE9460080A527 /* OEHomeDetailController.swift */; };
+		BC8978831E4AF3320080A527 /* HomeStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8978821E4AF3320080A527 /* HomeStoryBoard.storyboard */; };
 		BC9A519F1E1CCAE1001A6EAA /* OECache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A519E1E1CCAE1001A6EAA /* OECache.swift */; };
 		BCA7CAA71DF7A89B00CA5EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA61DF7A89B00CA5EC6 /* Assets.xcassets */; };
 		BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA7CAA81DF7A89B00CA5EC6 /* LaunchScreen.storyboard */; };
 		BCA7CAB51DF7A89B00CA5EC6 /* OE5MinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CAB41DF7A89B00CA5EC6 /* OE5MinTests.swift */; };
 		BCA7CAC01DF7A89B00CA5EC6 /* OE5MinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7CABF1DF7A89B00CA5EC6 /* OE5MinUITests.swift */; };
+		BCB387971E4C79B7009046A2 /* OEFavoShareToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB387961E4C79B7009046A2 /* OEFavoShareToolBar.swift */; };
 		BCDB2C961E24C29800FB0E0E /* OENavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB2C951E24C29800FB0E0E /* OENavigationDelegate.swift */; };
 		BCDB2C981E24C2CF00FB0E0E /* OEControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB2C971E24C2CF00FB0E0E /* OEControllerTransition.swift */; };
 /* End PBXBuildFile section */
@@ -56,9 +64,13 @@
 		A1FD8344CF9E9AABDCDAF6A9 /* Pods-OE5Min.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OE5Min.release.xcconfig"; path = "Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min.release.xcconfig"; sourceTree = "<group>"; };
 		BC0A896F1DFFDA92009765D0 /* OEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEView.swift; sourceTree = "<group>"; };
 		BC0A8C8E1DF95F32008B348C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		BC2B7FBA1E49692600480B3D /* OEHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeCell.swift; sourceTree = "<group>"; };
+		BC2B7FBB1E49692600480B3D /* OEHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OEHomeCell.xib; sourceTree = "<group>"; };
 		BC372E631DF8FA39006FA33C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC372E641DF8FA39006FA33C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEMacro.swift; sourceTree = "<group>"; };
+		BC468F9D1E4DBC8F00FBFEF4 /* OEContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEContentView.swift; sourceTree = "<group>"; };
+		BC468FA21E4DBD3000FBFEF4 /* OEPaperModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEPaperModel.swift; sourceTree = "<group>"; };
 		BC49C5A71E4805DA00983F53 /* OELoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OELoginView.xib; sourceTree = "<group>"; };
 		BC49C5AA1E4812BA00983F53 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BC49C5B21E48225F00983F53 /* OESettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OESettingController.swift; sourceTree = "<group>"; };
@@ -71,6 +83,9 @@
 		BC52E9191DFE73E600255199 /* OEBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEBaseViewController.swift; sourceTree = "<group>"; };
 		BC7BE0CA1E1FBA1600E8EA32 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		BC7C76F71E1B8669003807FC /* OENetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OENetWorking.swift; sourceTree = "<group>"; };
+		BC7CE11B1E4C39DA009B9C39 /* favorite.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = favorite.json; sourceTree = "<group>"; };
+		BC8978801E4AE9460080A527 /* OEHomeDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeDetailController.swift; sourceTree = "<group>"; };
+		BC8978821E4AF3320080A527 /* HomeStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryBoard.storyboard; sourceTree = "<group>"; };
 		BC9A519A1E1CA8E6001A6EAA /* OE5Min-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OE5Min-Bridging-Header.h"; sourceTree = "<group>"; };
 		BC9A519E1E1CCAE1001A6EAA /* OECache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OECache.swift; sourceTree = "<group>"; };
 		BCA7CA9C1DF7A89A00CA5EC6 /* OE5Min.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OE5Min.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +97,7 @@
 		BCA7CABB1DF7A89B00CA5EC6 /* OE5MinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OE5MinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA7CABF1DF7A89B00CA5EC6 /* OE5MinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OE5MinUITests.swift; sourceTree = "<group>"; };
 		BCA7CAC11DF7A89B00CA5EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB387961E4C79B7009046A2 /* OEFavoShareToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEFavoShareToolBar.swift; sourceTree = "<group>"; };
 		BCDB2C951E24C29800FB0E0E /* OENavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OENavigationDelegate.swift; sourceTree = "<group>"; };
 		BCDB2C971E24C2CF00FB0E0E /* OEControllerTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEControllerTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +162,14 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		BC468F9F1E4DBCE400FBFEF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC468FA21E4DBD3000FBFEF4 /* OEPaperModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BC49C5A61E4805B000983F53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +189,7 @@
 		BC49C5AC1E48223300983F53 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BC468F9F1E4DBCE400FBFEF4 /* Models */,
 				BC49C5AD1E48223300983F53 /* Controllers */,
 				BC49C5AE1E48223300983F53 /* StoryBoard */,
 				BC49C5AF1E48223300983F53 /* Views */,
@@ -176,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				BC49C5B91E48243000983F53 /* OEHomeController.swift */,
+				BC8978801E4AE9460080A527 /* OEHomeDetailController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +209,7 @@
 		BC49C5AE1E48223300983F53 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				BC8978821E4AF3320080A527 /* HomeStoryBoard.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -190,6 +217,10 @@
 		BC49C5AF1E48223300983F53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC2B7FBA1E49692600480B3D /* OEHomeCell.swift */,
+				BC2B7FBB1E49692600480B3D /* OEHomeCell.xib */,
+				BCB387961E4C79B7009046A2 /* OEFavoShareToolBar.swift */,
+				BC468F9D1E4DBC8F00FBFEF4 /* OEContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +254,7 @@
 		BC52E6E31E471A9200A65AEB /* source */ = {
 			isa = PBXGroup;
 			children = (
+				BC7CE11B1E4C39DA009B9C39 /* favorite.json */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -448,7 +480,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2B7FBD1E49692700480B3D /* OEHomeCell.xib in Resources */,
+				BC7CE11C1E4C39DA009B9C39 /* favorite.json in Resources */,
 				BC49C5A81E4805DA00983F53 /* OELoginView.xib in Resources */,
+				BC8978831E4AF3320080A527 /* HomeStoryBoard.storyboard in Resources */,
 				BC372E661DF8FA39006FA33C /* Info.plist in Resources */,
 				BC49C5AB1E4812BA00983F53 /* Login.storyboard in Resources */,
 				BCA7CAAA1DF7A89B00CA5EC6 /* LaunchScreen.storyboard in Resources */,
@@ -527,13 +562,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC49C5B61E48225F00983F53 /* OESettingController.swift in Sources */,
+				BCB387971E4C79B7009046A2 /* OEFavoShareToolBar.swift in Sources */,
 				BC7BE0CB1E1FBA1600E8EA32 /* UITableView+Extension.swift in Sources */,
+				BC468F9E1E4DBC9100FBFEF4 /* OEContentView.swift in Sources */,
 				BC52E91B1DFE73E600255199 /* OEBaseTableViewController.swift in Sources */,
+				BC8978811E4AE9460080A527 /* OEHomeDetailController.swift in Sources */,
+				BC468FA31E4DBD3000FBFEF4 /* OEPaperModel.swift in Sources */,
 				BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */,
 				BC49C5BA1E48243000983F53 /* OEHomeController.swift in Sources */,
 				BCDB2C961E24C29800FB0E0E /* OENavigationDelegate.swift in Sources */,
 				BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */,
 				BC52E6E71E471AC000A65AEB /* OELoginController.swift in Sources */,
+				BC2B7FBC1E49692700480B3D /* OEHomeCell.swift in Sources */,
 				BCDB2C981E24C2CF00FB0E0E /* OEControllerTransition.swift in Sources */,
 				BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */,
 				BC52E91C1DFE73E600255199 /* OEBaseViewController.swift in Sources */,

@@ -12,20 +12,17 @@ protocol ConfigHeaderViewProtocol {
     func configHeaderView(height:CGFloat,image:UIImage?,backgroundColor:UIColor?)
 }
 
-protocol OEMoveProtocol {
-    var moveImages:[String]? {get set}
-    var moveView:UIView? {get set}
-    var toView:UIView? {get set}
-}
 
-class OEBaseTableViewController: OEBaseViewController,OEMoveProtocol {
+
+class OEBaseTableViewController: OEBaseViewController {
     
     internal var moveView: UIView?
     internal var toView: UIView?
     internal var moveImages: [String]?
     
     
-
+    
+       
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: self.view.frame, style: .plain)
         return tableView
@@ -37,13 +34,28 @@ class OEBaseTableViewController: OEBaseViewController,OEMoveProtocol {
         self.automaticallyAdjustsScrollViewInsets = false
         tableView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
         tableView.separatorStyle = .none
+        tableView.delegate = self
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+}
+
+extension OEBaseTableViewController:UITableViewDelegate {
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        var navHeight:CGFloat = 0
+        if velocity.y>0 {//向下
+            navHeight = -64
+        }else{//向上
+            navHeight = 20
+        }
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
+            self.navigationController?.navigationBar.frame.origin.y = navHeight
+        }, completion: nil)
+    }
 }
 
 extension ConfigHeaderViewProtocol where Self:OEBaseTableViewController{

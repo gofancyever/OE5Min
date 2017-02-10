@@ -3,41 +3,35 @@
 import UIKit
 import PlaygroundSupport
 import RxSwift
+import RxCocoa
 
-func initTestRx() {
-    /*
-     let myJust = { (singleElement:Int) -> Observable<Int> in
-     return Observable.create({ (observer) -> Disposable in
-     observer.onNext(singleElement)
-     observer.onCompleted()
-     return  Disposables.create()
-     })
-     
-     }
-     _ = myJust(5).subscribe({ (event) in
-     print(event)
-     })
-     */
-    let deferredSequence:Observable<Int> = Observable.deferred { () -> Observable<Int> in
-        return Observable.create({ (observer) -> Disposable in
-            observer.onNext(0)
-            observer.onNext(1)
-            observer.onNext(2)
-            return Disposables.create()
-        })
+let iPhoneView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
+iPhoneView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+PlaygroundPage.current.liveView = iPhoneView
+
+let button = UIButton(frame: CGRect(x: 20, y: 20, width: 40, height: 40))
+button.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+iPhoneView.addSubview(button)
+
+let subject = PublishSubject<UIButton>()
+class Receiver {
+    @objc func buttonClicked(sender:UIButton) {
+        subject.onNext(sender)
     }
-    _ = deferredSequence.subscribe({ (event) in
-        print(event)
-    })
-    _ = deferredSequence.subscribe({ (event) in
-        print(event)
-    })
 }
 
-//initTestRx()
 
-let repeatElementSequence = Observable.repeatElement(1)
+let receiver = Receiver()
+button.setTitle("TestButton", for: .normal)
+button.setTitleColor(#colorLiteral(red: 0.474509805440903, green: 0.839215695858002, blue: 0.976470589637756, alpha: 1.0), for: .normal)
+button.addTarget(receiver, action: #selector(Receiver.buttonClicked(sender:)), for: .touchUpInside)
+iPhoneView.addSubview(button)
 
-_ = repeatElementSequence.subscribe { event in
-    print(event)
+
+button.rx.tap.subscribe { (even) in
+    print("click")
+}
+
+subject.subscribe { (button) in
+    print(button)
 }

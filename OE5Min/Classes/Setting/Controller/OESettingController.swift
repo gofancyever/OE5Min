@@ -36,7 +36,7 @@ class OESettingController: OEBaseTableViewController,ConfigHeaderViewProtocol{
         configHeaderView(height:200, image: nil, backgroundColor: #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1))
 
         /** tableView */
-        tableView.delegate = self
+
         tableView.dataSource = self
         tableView.layer.masksToBounds = true
         tableView.layer.cornerRadius = 4
@@ -79,7 +79,7 @@ class OESettingController: OEBaseTableViewController,ConfigHeaderViewProtocol{
 
 
 
-extension OESettingController:UITableViewDataSource,UITableViewDelegate {
+extension OESettingController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

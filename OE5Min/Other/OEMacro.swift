@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import SnapKit
 import Kingfisher
-
+import Hero
 
 
 let kUMAppKey = "585f42a6a40fa35322002cc6"

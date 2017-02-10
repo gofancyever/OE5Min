@@ -37,5 +37,7 @@ target 'OE5Min' do
     pod 'lottie-ios'
     pod 'RxSwift',    '~> 3.0'
     pod 'RxCocoa',    '~> 3.0'
+    pod 'RxDataSources'
+    pod "Hero"
 end
 

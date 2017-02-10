@@ -15,6 +15,7 @@ class OEBaseNavController: UINavigationController {
         super.viewDidLoad()
         self.navigationBar.subviews[0].alpha = 0
         self.delegate = navDelegate
+        self.isHeroEnabled = true
     }
 
 }

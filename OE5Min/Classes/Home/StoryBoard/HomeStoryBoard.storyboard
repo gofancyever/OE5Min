@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="S88-oG-D8r">
+            <objects>
+                <viewController storyboardIdentifier="HomeDetail" id="W2T-Og-uCH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PTZ-fo-5Rb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mc5-XD-jIa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q1o-GF-sS1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bs-4Y-yp0" customClass="OEContentView" customModule="OE5Min" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="396"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="396" id="Z7F-L9-QmQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9Bs-4Y-yp0" firstAttribute="top" secondItem="PTZ-fo-5Rb" secondAttribute="bottom" constant="8" id="dMg-3q-hzh"/>
+                            <constraint firstItem="9Bs-4Y-yp0" firstAttribute="leading" secondItem="Q1o-GF-sS1" secondAttribute="leading" id="fNN-yd-fSr"/>
+                            <constraint firstAttribute="trailing" secondItem="9Bs-4Y-yp0" secondAttribute="trailing" id="knn-XD-Q3E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4P8-hC-sGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="56.221889055472268"/>
+        </scene>
+    </scenes>
+</document>
