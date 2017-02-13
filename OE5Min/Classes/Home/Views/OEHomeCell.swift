@@ -35,6 +35,9 @@ class OEHomeCell: UITableViewCell {
         
     }
     
+    override func prepareForReuse() {
+        tool_favoShare.animationView?.animationProgress = 0;
+    }
 
     
 

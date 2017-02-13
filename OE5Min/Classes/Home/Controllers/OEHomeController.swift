@@ -27,7 +27,6 @@ class OEHomeController: OEBaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         initSubViews()
         initConstraints()
         self.tableView.delegate = self
@@ -74,7 +73,7 @@ class OEHomeController: OEBaseTableViewController {
                 
                 let controller = UIStoryboard(name: "HomeStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "HomeDetail")
                 
-                self.navigationController?.pushViewController(controller, animated: true)
+                self.navigationController?.pushViewController(detailController, animated: true)
                 
                 
             })
@@ -92,8 +91,8 @@ class OEHomeController: OEBaseTableViewController {
     func configCellHero(indexPath:IndexPath){
         let cell = self.tableView.cellForRow(at: indexPath) as! OEHomeCell
         cell.heroModifiers = [.fade]
-        cell.imgV_cellBg.heroModifiers = [.fade]
-        cell.contentView.heroModifiers = [.fade,.useGlobalCoordinateSpace]
+        cell.imgV_cellBg.heroModifiers = [.arc]
+        cell.contentView.heroModifiers = [.arc,.useGlobalCoordinateSpace]
         cell.imgV_cellBg.heroID = "image_\(indexPath.row)"
         cell.view_content.heroID = "content_\(indexPath.row)"
         cell.tool_favoShare.heroID = "tool_\(indexPath.row)"
@@ -105,7 +104,7 @@ class OEHomeController: OEBaseTableViewController {
         tableView.estimatedRowHeight = 100
         self.tableView.register(UINib(nibName: "\(OEHomeCell.self)", bundle: nil), forCellReuseIdentifier: "\(OEHomeCell.self)")
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "left", style: .plain, target: self, action: #selector(leftItemClick))
-        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "right", style: .plain, target: self, action: #selector(rightItemClick))
     }
     func initConstraints(){
         self.tableView.snp.makeConstraints { (make) in
@@ -114,8 +113,14 @@ class OEHomeController: OEBaseTableViewController {
     }
     
     func leftItemClick(){
+        let searchController = OESearchController()
+        self.present(searchController, animated: true, completion: nil)
+    }
+    
+    func rightItemClick() {
         
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }

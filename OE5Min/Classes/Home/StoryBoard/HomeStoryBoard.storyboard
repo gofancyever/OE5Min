@@ -19,19 +19,6 @@
                     <view key="view" contentMode="scaleToFill" id="Q1o-GF-sS1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bs-4Y-yp0" customClass="OEContentView" customModule="OE5Min" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="396"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="396" id="Z7F-L9-QmQ"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="9Bs-4Y-yp0" firstAttribute="top" secondItem="PTZ-fo-5Rb" secondAttribute="bottom" constant="8" id="dMg-3q-hzh"/>
-                            <constraint firstItem="9Bs-4Y-yp0" firstAttribute="leading" secondItem="Q1o-GF-sS1" secondAttribute="leading" id="fNN-yd-fSr"/>
-                            <constraint firstAttribute="trailing" secondItem="9Bs-4Y-yp0" secondAttribute="trailing" id="knn-XD-Q3E"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4P8-hC-sGq" userLabel="First Responder" sceneMemberID="firstResponder"/>

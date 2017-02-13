@@ -14,8 +14,9 @@
 		BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E631DF8FA39006FA33C /* AppDelegate.swift */; };
 		BC372E661DF8FA39006FA33C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC372E641DF8FA39006FA33C /* Info.plist */; };
 		BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */; };
-		BC468F9E1E4DBC9100FBFEF4 /* OEContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC468F9D1E4DBC8F00FBFEF4 /* OEContentView.swift */; };
 		BC468FA31E4DBD3000FBFEF4 /* OEPaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC468FA21E4DBD3000FBFEF4 /* OEPaperModel.swift */; };
+		BC48BAC71E51B0CE00EC4668 /* OESearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48BAC51E51B0CE00EC4668 /* OESearchController.swift */; };
+		BC48BAC81E51B0CE00EC4668 /* OESearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC48BAC61E51B0CE00EC4668 /* OESearchController.xib */; };
 		BC49C5A81E4805DA00983F53 /* OELoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC49C5A71E4805DA00983F53 /* OELoginView.xib */; };
 		BC49C5AB1E4812BA00983F53 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC49C5AA1E4812BA00983F53 /* Login.storyboard */; };
 		BC49C5B61E48225F00983F53 /* OESettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49C5B21E48225F00983F53 /* OESettingController.swift */; };
@@ -69,8 +70,9 @@
 		BC372E631DF8FA39006FA33C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC372E641DF8FA39006FA33C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEMacro.swift; sourceTree = "<group>"; };
-		BC468F9D1E4DBC8F00FBFEF4 /* OEContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEContentView.swift; sourceTree = "<group>"; };
 		BC468FA21E4DBD3000FBFEF4 /* OEPaperModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEPaperModel.swift; sourceTree = "<group>"; };
+		BC48BAC51E51B0CE00EC4668 /* OESearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OESearchController.swift; sourceTree = "<group>"; };
+		BC48BAC61E51B0CE00EC4668 /* OESearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OESearchController.xib; sourceTree = "<group>"; };
 		BC49C5A71E4805DA00983F53 /* OELoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OELoginView.xib; sourceTree = "<group>"; };
 		BC49C5AA1E4812BA00983F53 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BC49C5B21E48225F00983F53 /* OESettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OESettingController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		BC372E601DF8FA38006FA33C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BC48BAC11E51B08C00EC4668 /* AddNew */,
 				BC49C5B01E48225F00983F53 /* Setting */,
 				BC49C5AC1E48223300983F53 /* Home */,
 				BC7C76F01E1B8654003807FC /* Login */,
@@ -168,6 +171,39 @@
 				BC468FA21E4DBD3000FBFEF4 /* OEPaperModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BC48BAC11E51B08C00EC4668 /* AddNew */ = {
+			isa = PBXGroup;
+			children = (
+				BC48BAC21E51B08D00EC4668 /* Controller */,
+				BC48BAC31E51B08D00EC4668 /* Models */,
+				BC48BAC41E51B08D00EC4668 /* Views */,
+			);
+			path = AddNew;
+			sourceTree = "<group>";
+		};
+		BC48BAC21E51B08D00EC4668 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC48BAC51E51B0CE00EC4668 /* OESearchController.swift */,
+				BC48BAC61E51B0CE00EC4668 /* OESearchController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC48BAC31E51B08D00EC4668 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC48BAC41E51B08D00EC4668 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BC49C5A61E4805B000983F53 /* Views */ = {
@@ -220,7 +256,6 @@
 				BC2B7FBA1E49692600480B3D /* OEHomeCell.swift */,
 				BC2B7FBB1E49692600480B3D /* OEHomeCell.xib */,
 				BCB387961E4C79B7009046A2 /* OEFavoShareToolBar.swift */,
-				BC468F9D1E4DBC8F00FBFEF4 /* OEContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -483,6 +518,7 @@
 				BC2B7FBD1E49692700480B3D /* OEHomeCell.xib in Resources */,
 				BC7CE11C1E4C39DA009B9C39 /* favorite.json in Resources */,
 				BC49C5A81E4805DA00983F53 /* OELoginView.xib in Resources */,
+				BC48BAC81E51B0CE00EC4668 /* OESearchController.xib in Resources */,
 				BC8978831E4AF3320080A527 /* HomeStoryBoard.storyboard in Resources */,
 				BC372E661DF8FA39006FA33C /* Info.plist in Resources */,
 				BC49C5AB1E4812BA00983F53 /* Login.storyboard in Resources */,
@@ -562,9 +598,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC49C5B61E48225F00983F53 /* OESettingController.swift in Sources */,
+				BC48BAC71E51B0CE00EC4668 /* OESearchController.swift in Sources */,
 				BCB387971E4C79B7009046A2 /* OEFavoShareToolBar.swift in Sources */,
 				BC7BE0CB1E1FBA1600E8EA32 /* UITableView+Extension.swift in Sources */,
-				BC468F9E1E4DBC9100FBFEF4 /* OEContentView.swift in Sources */,
 				BC52E91B1DFE73E600255199 /* OEBaseTableViewController.swift in Sources */,
 				BC8978811E4AE9460080A527 /* OEHomeDetailController.swift in Sources */,
 				BC468FA31E4DBD3000FBFEF4 /* OEPaperModel.swift in Sources */,

@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="282"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="282"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flying" translatesAutoresizingMaskIntoConstraints="NO" id="Lhm-RN-mTd">
@@ -56,7 +56,6 @@ is a large number of delegate methods that need to be implemented for the simple
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYd-AR-Jyy" customClass="OEFavoShareToolBar" customModule="OE5Min" customModuleProvider="target">
                                 <rect key="frame" x="8" y="93" width="274" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
