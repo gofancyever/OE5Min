@@ -16,9 +16,7 @@ protocol ConfigHeaderViewProtocol {
 
 class OEBaseTableViewController: OEBaseViewController {
     
-    internal var moveView: UIView?
-    internal var toView: UIView?
-    internal var moveImages: [String]?
+
     
     
     

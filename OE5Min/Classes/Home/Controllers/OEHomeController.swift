@@ -113,7 +113,8 @@ class OEHomeController: OEBaseTableViewController {
     }
     
     func leftItemClick(){
-        let searchController = OESearchController()
+        
+        let searchController = UIStoryboard(name:"\(OESearchController.self)" , bundle: nil).instantiateInitialViewController()!
         self.present(searchController, animated: true, completion: nil)
     }
     

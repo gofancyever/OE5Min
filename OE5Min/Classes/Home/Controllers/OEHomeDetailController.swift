@@ -13,6 +13,7 @@ let height_imgv:CGFloat = 189
 class OEHomeDetailController: OEBaseViewController {
 
 
+    
     let footerView = OEFavoShareToolBar()
         let loadActive = UIActivityIndicatorView(activityIndicatorStyle: .white)
     lazy var headerView: UIImageView = {
