@@ -4,34 +4,45 @@ import UIKit
 import PlaygroundSupport
 import RxSwift
 import RxCocoa
+import SnapKit
+//let iPhoneView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
+//iPhoneView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+//PlaygroundPage.current.liveView = iPhoneView
+//
+//let stackView = UIStackView()
+//iPhoneView.addSubview(stackView)
+//stackView.frame = CGRect(x: 0, y: 0, width: 320, height: 40)
+//
+//stackView.distribution = .equalSpacing
+//stackView.axis = .horizontal
+//
+//let view1 = UIView()
+//view1.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+//
+//let view2 = UIView()
+//view1.backgroundColor = #colorLiteral(red: 0.4078193307, green: 0.4078193307, blue: 0.4078193307, alpha: 1)
+//
+//stackView.addArrangedSubview(view1)
+//stackView.addArrangedSubview(view2)
 
-let iPhoneView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
-iPhoneView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-PlaygroundPage.current.liveView = iPhoneView
+struct user {
+    var name:String?
+    var ago:Int?
+}
+let user1 = user(name: "a",ago: 12)
+let user2 = user(name: "b", ago: 14)
 
-let button = UIButton(frame: CGRect(x: 20, y: 20, width: 40, height: 40))
-button.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
-iPhoneView.addSubview(button)
+var array  = [user1,user2];
 
-let subject = PublishSubject<UIButton>()
-class Receiver {
-    @objc func buttonClicked(sender:UIButton) {
-        subject.onNext(sender)
-    }
+let index = array.index { (user) -> Bool in
+    return user.name == user2.name
 }
 
+print(index)
 
-let receiver = Receiver()
-button.setTitle("TestButton", for: .normal)
-button.setTitleColor(#colorLiteral(red: 0.474509805440903, green: 0.839215695858002, blue: 0.976470589637756, alpha: 1.0), for: .normal)
-button.addTarget(receiver, action: #selector(Receiver.buttonClicked(sender:)), for: .touchUpInside)
-iPhoneView.addSubview(button)
+array.remove(at: index!)
+print(array)
 
 
-button.rx.tap.subscribe { (even) in
-    print("click")
-}
 
-subject.subscribe { (button) in
-    print(button)
-}
+

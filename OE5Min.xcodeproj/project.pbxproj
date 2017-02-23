@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33068C034C4FB756E147628A /* Pods_OE5Min.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7C9F3405B08D04F157AF12 /* Pods_OE5Min.framework */; };
 		BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A896F1DFFDA92009765D0 /* OEView.swift */; };
+		BC2A37901E54367A0007C7E2 /* OETableClassifiedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A378F1E54367A0007C7E2 /* OETableClassifiedModel.swift */; };
 		BC2B7FBC1E49692700480B3D /* OEHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7FBA1E49692600480B3D /* OEHomeCell.swift */; };
 		BC2B7FBD1E49692700480B3D /* OEHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2B7FBB1E49692600480B3D /* OEHomeCell.xib */; };
 		BC334DA81E52903D00F0E7C5 /* OESearchController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC334DA71E52903D00F0E7C5 /* OESearchController.storyboard */; };
@@ -16,6 +17,7 @@
 		BC334DAC1E529D9400F0E7C5 /* OEClassifiedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC334DAA1E529D9400F0E7C5 /* OEClassifiedCell.xib */; };
 		BC334DB01E52EE7700F0E7C5 /* OETableClassifiedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC334DAE1E52EE7700F0E7C5 /* OETableClassifiedCell.swift */; };
 		BC334DB11E52EE7700F0E7C5 /* OETableClassifiedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC334DAF1E52EE7700F0E7C5 /* OETableClassifiedCell.xib */; };
+		BC33DA031E5EBF0400F65E74 /* OETestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC33DA021E5EBF0400F65E74 /* OETestViewController.swift */; };
 		BC372E651DF8FA39006FA33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E631DF8FA39006FA33C /* AppDelegate.swift */; };
 		BC372E661DF8FA39006FA33C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC372E641DF8FA39006FA33C /* Info.plist */; };
 		BC372E701DF8FEEF006FA33C /* OEMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */; };
@@ -68,6 +70,7 @@
 		A1FD8344CF9E9AABDCDAF6A9 /* Pods-OE5Min.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OE5Min.release.xcconfig"; path = "Pods/Target Support Files/Pods-OE5Min/Pods-OE5Min.release.xcconfig"; sourceTree = "<group>"; };
 		BC0A896F1DFFDA92009765D0 /* OEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEView.swift; sourceTree = "<group>"; };
 		BC0A8C8E1DF95F32008B348C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		BC2A378F1E54367A0007C7E2 /* OETableClassifiedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OETableClassifiedModel.swift; sourceTree = "<group>"; };
 		BC2B7FBA1E49692600480B3D /* OEHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEHomeCell.swift; sourceTree = "<group>"; };
 		BC2B7FBB1E49692600480B3D /* OEHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OEHomeCell.xib; sourceTree = "<group>"; };
 		BC334DA71E52903D00F0E7C5 /* OESearchController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OESearchController.storyboard; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		BC334DAA1E529D9400F0E7C5 /* OEClassifiedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OEClassifiedCell.xib; sourceTree = "<group>"; };
 		BC334DAE1E52EE7700F0E7C5 /* OETableClassifiedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OETableClassifiedCell.swift; sourceTree = "<group>"; };
 		BC334DAF1E52EE7700F0E7C5 /* OETableClassifiedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OETableClassifiedCell.xib; sourceTree = "<group>"; };
+		BC33DA021E5EBF0400F65E74 /* OETestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OETestViewController.swift; sourceTree = "<group>"; };
 		BC372E631DF8FA39006FA33C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC372E641DF8FA39006FA33C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC372E6F1DF8FEEF006FA33C /* OEMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OEMacro.swift; sourceTree = "<group>"; };
@@ -145,6 +149,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		BC33DA011E5EBEE100F65E74 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				BC33DA021E5EBF0400F65E74 /* OETestViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		BC372E601DF8FA38006FA33C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +213,7 @@
 		BC48BAC31E51B08D00EC4668 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC2A378F1E54367A0007C7E2 /* OETableClassifiedModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -368,6 +381,7 @@
 		BCA7CA9E1DF7A89A00CA5EC6 /* OE5Min */ = {
 			isa = PBXGroup;
 			children = (
+				BC33DA011E5EBEE100F65E74 /* Test */,
 				BC7C76F61E1B8669003807FC /* Tool */,
 				BC0A896E1DFFDA60009765D0 /* Extension */,
 				BC372E601DF8FA38006FA33C /* Classes */,
@@ -623,8 +637,10 @@
 				BC0A89701DFFDA92009765D0 /* OEView.swift in Sources */,
 				BC52E6E71E471AC000A65AEB /* OELoginController.swift in Sources */,
 				BC2B7FBC1E49692700480B3D /* OEHomeCell.swift in Sources */,
+				BC2A37901E54367A0007C7E2 /* OETableClassifiedModel.swift in Sources */,
 				BC7C76F81E1B8669003807FC /* OENetWorking.swift in Sources */,
 				BC52E91C1DFE73E600255199 /* OEBaseViewController.swift in Sources */,
+				BC33DA031E5EBF0400F65E74 /* OETestViewController.swift in Sources */,
 				BC9A519F1E1CCAE1001A6EAA /* OECache.swift in Sources */,
 				BC52E91A1DFE73E600255199 /* OEBaseNavController.swift in Sources */,
 				BC49C5B71E48225F00983F53 /* OESetCollectionCell.swift in Sources */,

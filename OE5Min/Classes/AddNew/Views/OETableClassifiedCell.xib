@@ -26,9 +26,7 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUw-FF-aht">
                         <rect key="frame" x="289" y="10.5" width="23" height="23"/>
-                        <state key="normal" image="add">
-                            <color key="titleColor" red="0.2588235438" green="0.75686275960000005" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </state>
+                        <state key="normal" image="add"/>
                         <state key="selected" image="add"/>
                         <connections>
                             <action selector="btn_selectClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Lp7-xB-lsf"/>
@@ -44,6 +42,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="btn_select" destination="DUw-FF-aht" id="qFz-MG-q6M"/>
+                <outlet property="leb_name" destination="qgi-ND-vP2" id="SjM-Py-3DK"/>
             </connections>
         </tableViewCell>
     </objects>

@@ -37,6 +37,9 @@
                 <constraint firstItem="E5l-6z-27n" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="zpy-WH-hH5"/>
             </constraints>
             <size key="customSize" width="44" height="44"/>
+            <connections>
+                <outlet property="name" destination="E5l-6z-27n" id="DgV-Gv-BWG"/>
+            </connections>
             <point key="canvasLocation" x="31" y="51"/>
         </collectionViewCell>
     </objects>
